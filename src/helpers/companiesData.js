@@ -11,4 +11,22 @@ export const companiesData = [
     phone: '123 456 789',
     tags: ['Backend', 'Java'],
   },
+  {
+    name: 'Test2',
+    email: 'test@gmail.com',
+    phone: '123 456 789',
+    tags: ['Backend', 'Java'],
+  },
+  {
+    name: 'Test3',
+    email: 'test@gmail.com',
+    phone: '123 456 789',
+    tags: ['Backend', 'Java'],
+  },
+  {
+    name: 'Test4',
+    email: 'test@gmail.com',
+    phone: '123 456 789',
+    tags: ['Backend', 'Java'],
+  },
 ];

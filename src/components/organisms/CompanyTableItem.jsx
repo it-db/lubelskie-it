@@ -18,26 +18,26 @@ export const CompanyTableItem = ({ name, email, phone, tags, status, onChange })
     <tr className="border-neutral-800/60">
       <td>
         <div>
-          <div className="font-bold text-xl text-neutral-100">{name}</div>
+          <div className="text-xl font-bold text-neutral-50">{name}</div>
         </div>
       </td>
       <td>
-        <div className="font-semibold text-lg text-neutral-300">{email}</div>
+        <div className="text-lg font-semibold text-neutral-300">{email}</div>
       </td>
       <td>
-        <div className="font-semibold text-lg text-neutral-300">{phone}</div>
+        <div className=" text-lg font-semibold text-neutral-300">{phone}</div>
       </td>
-      <td className="flex mt-2 gap-2 items-center">
+      <td className="mt-2 flex items-center gap-2">
         {tags.map((tag, index) => {
           return (
-            <div key={index} className="font-semibold text-neutral-300 border-2 rounded-lg text-center py-1 px-2 border-purple-600 text-sm">
+            <div key={index} className="rounded-lg border-2 border-purple-600 px-2 py-1 text-center text-sm font-semibold text-neutral-300">
               {tag}
             </div>
           );
         })}
       </td>
       <td>
-        <select defaultValue={status} onChange={handleStatusChange} className="select w-full max-w-xs bg-neutral-900 text-neutral-300 text-lg font-semibold -ml-4">
+        <select defaultValue={status} onChange={handleStatusChange} className="select -ml-4 w-full max-w-xs bg-neutral-900 text-lg font-semibold text-neutral-300">
           <option disabled selected>
             Wybierz status
           </option>
