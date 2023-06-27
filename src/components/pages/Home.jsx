@@ -6,6 +6,7 @@ import GitHubButton from 'react-github-btn';
 import useData from '../../hooks/useData';
 import TagInput from '../molecules/TagInput';
 import { motion } from 'framer-motion';
+import AnimText from '../molecules/AnimText';
 
 const container = {
   visible: {
@@ -96,7 +97,8 @@ export const Home = () => {
     <div className="h-auto min-h-screen bg-neutral-900 py-10">
       <div className="flex w-full flex-col items-center justify-center pb-10">
         <div className="bg-gradient-to-r from-purple-600 to-violet-700 bg-clip-text text-6xl font-extrabold tracking-tight text-transparent">
-          <span className="text-neutral-300"></span> Lubelskie IT
+          {/* <AnimText text="Lubelskie IT" delay={0.1} /> */}
+          Lubelskie IT
         </div>
 
         <div className="mt-2 text-2xl font-semibold text-neutral-300">Baza Danych Lubelskich Firm IT</div>
