@@ -32,12 +32,12 @@ export const Home = () => {
         <div className="mt-2 text-2xl font-semibold text-neutral-300">Baza Danych Lubelskich Firm IT</div>
         <div className="mt-10 flex flex-col items-center justify-center md:w-4/5 lg:w-4/5 ">
           <div className="flex gap-5 border-b-2 border-neutral-800/30 pb-10 sm:w-4/5 md:w-full lg:w-full">
-            <input type="text" placeholder="Szukaj firm lub technologii..." className="input h-14 w-full bg-neutral-800/60 text-lg text-neutral-300 outline-1 placeholder:font-semibold placeholder:text-neutral-400   " />
-            <button className="text-md btn h-14 w-28 bg-gradient-to-r from-purple-600 to-violet-700 font-bold text-neutral-50 transition duration-200 hover:from-purple-700 hover:to-violet-800">Szukaj</button>
+            <input type="text" placeholder="Szukaj firm lub technologii..." className="input h-14 w-full bg-neutral-800/60 text-lg font-semibold text-neutral-300 outline-1 placeholder:font-semibold placeholder:text-neutral-400   " />
+            <button className="text-md btn h-14 w-28 bg-neutral-800/60 font-bold text-neutral-50 transition duration-150 ease-linear hover:bg-violet-700 ">Szukaj</button>
           </div>
 
           <div className="mt-10 flex justify-end lg:w-full">
-            <select className="text-md  select max-w-xs  bg-neutral-800/60 font-normal text-neutral-400" onChange={(event) => setSelectedStatusFilter(event.target.value)}>
+            <select className="text-md  select max-w-xs  bg-neutral-800/60 font-semibold text-neutral-400" onChange={(event) => setSelectedStatusFilter(event.target.value)}>
               <option disabled selected>
                 Status Rekrutacji
               </option>

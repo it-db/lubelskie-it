@@ -30,7 +30,7 @@ export const CompanyTableItem = ({ name, email, phone, tags, status, onChange })
       <td className="mt-2 flex items-center gap-2">
         {tags.map((tag, index) => {
           return (
-            <div key={index} className="rounded-lg border-2 border-purple-600 px-2 py-1 text-center text-sm font-semibold text-neutral-300">
+            <div key={index} className="rounded-lg  bg-gradient-to-r from-purple-600 to-violet-700 px-2 py-1 text-center text-sm font-semibold text-neutral-300">
               {tag}
             </div>
           );
