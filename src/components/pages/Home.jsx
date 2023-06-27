@@ -4,10 +4,11 @@ import { useEffect } from 'react';
 // import { companiesData } from '../../helpers/companiesData';
 import GitHubButton from 'react-github-btn';
 import useData from '../../hooks/useData';
+import TagInput from '../molecules/TagInput';
 
 export const Home = () => {
   const [selectedStatusFilter, setSelectedStatusFilter] = useState('');
-  const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
+  const [isCheckboxChecked, sWetIsCheckboxChecked] = useState(false);
   const [isSearchActive, setIsSearchActive] = useState(false);
 
   const [statuses, setStatuses] = useState(() => {
@@ -32,7 +33,10 @@ export const Home = () => {
     localStorage.setItem('statuses', JSON.stringify(statuses));
   }, [statuses]);
 
+  //list of companies
   const { data, isLoading } = useData();
+
+  const [tags, setTags] = useState([]);
 
   return (
     <div className="h-auto min-h-screen bg-neutral-900 py-10">
@@ -44,7 +48,8 @@ export const Home = () => {
         <div className="mt-2 text-2xl font-semibold text-neutral-300">Baza Danych Lubelskich Firm IT</div>
         <div className="mt-10 flex flex-col items-center justify-center md:w-4/5 lg:w-4/5 ">
           <div className="flex gap-5 border-b-2 border-neutral-800/30 pb-10 sm:w-4/5 md:w-full lg:w-full">
-            <input type="text" placeholder="Szukaj wpisując nazwy firm lub technologie..." className="input h-14 w-full bg-neutral-800/60 text-lg font-semibold text-neutral-300 outline-1 placeholder:font-semibold placeholder:text-neutral-500   " />
+            <TagInput tags={tags} setTags={setTags} />
+            {/* <input type="text" placeholder="Szukaj wpisując nazwy firm lub technologie..." className="input h-14 w-full bg-neutral-800/60 text-lg font-semibold text-neutral-300 outline-1 placeholder:font-semibold placeholder:text-neutral-500   " /> */}
             <button className="text-md btn h-14 w-28 bg-neutral-800/60 font-bold text-neutral-50 transition duration-150 ease-linear hover:bg-violet-700 ">Szukaj</button>
           </div>
 
