@@ -29,9 +29,9 @@ export const Home = () => {
   useEffect(() => {
     localStorage.setItem('statuses', JSON.stringify(statuses));
   }, [statuses]);
-  console.log("before useData")
-  const {data, isLoading} = useData();
-  console.log(data, isLoading)
+  console.log('before useData');
+  const { data, isLoading } = useData();
+  console.log(data, isLoading);
   return (
     <div className="h-auto min-h-screen bg-neutral-900 py-10">
       <div className="flex w-full flex-col items-center justify-center pb-10">
@@ -56,9 +56,7 @@ export const Home = () => {
             </div>
 
             <select className="text-md  select max-w-xs  bg-neutral-800/60 font-semibold text-neutral-400" onChange={(event) => setSelectedStatusFilter(event.target.value)}>
-              <option disabled>
-                Status Rekrutacji
-              </option>
+              <option disabled>Status Rekrutacji</option>
               <option value="Wszystkie">Wszystkie</option>
               <option value="Wysłane CV">Wysłane CV</option>
               <option value="Zaplanowana rozmowa">Zaplanowana rozmowa</option>
@@ -73,24 +71,24 @@ export const Home = () => {
               <thead>
                 <tr className="border-neutral-800/60 ">
                   <th className="text-neutral-500">Firma</th>
-                  <th className="text-neutral-500">Email</th>
-                  <th className="text-neutral-500">Numer</th>
+                  <th className="text-neutral-500">Kontakt</th>
                   <th className="text-neutral-500">Tagi</th>
                   <th className="text-neutral-500">Twój Status Rekrutacji</th>
                 </tr>
               </thead>
               <tbody>
-                {
-                isLoading ? <tr>Loading...</tr> :
-
-                data.map((company) => {
-                  if (selectedStatusFilter && statuses[company.name] !== selectedStatusFilter && selectedStatusFilter !== 'Wszystkie') {
-                    return null;
-                  } else if (isCheckboxChecked && statuses[company.name] === undefined) {
-                    return null;
-                  }
-                  return <CompanyTableItem key={company.name} name={company.name} email={company.url} phone={"000"} tags={company.tags} status={statuses[company.name]} onChange={handleStatusChange} />;
-                })}
+                {isLoading ? (
+                  <tr>Loading...</tr>
+                ) : (
+                  data.map((company) => {
+                    if (selectedStatusFilter && statuses[company.name] !== selectedStatusFilter && selectedStatusFilter !== 'Wszystkie') {
+                      return null;
+                    } else if (isCheckboxChecked && statuses[company.name] === undefined) {
+                      return null;
+                    }
+                    return <CompanyTableItem key={company.name} name={company.name} email={'fake@gmail.com'} url={company.url} phone={'532 328 213'} tags={company.tags} status={statuses[company.name]} onChange={handleStatusChange} />;
+                  })
+                )}
               </tbody>
             </table>
             <div className="mb-3 w-auto border-t  border-neutral-800/60 py-4 text-center font-semibold  text-neutral-200">Dane z dnia 28.07.2023</div>

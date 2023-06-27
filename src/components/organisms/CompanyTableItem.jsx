@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-export const CompanyTableItem = ({ name, email, phone, tags, status, onChange }) => {
+export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChange }) => {
   useEffect(() => {
     const storedStatus = localStorage.getItem(name);
     if (storedStatus && status !== storedStatus) {
@@ -18,16 +18,16 @@ export const CompanyTableItem = ({ name, email, phone, tags, status, onChange })
     <tr className="border-neutral-800/60">
       <td>
         <div>
-          <div className="text-xl font-bold text-neutral-50">{name}</div>
+          <a href={url} target="_blank" className="text-lg font-bold text-neutral-50 transition hover:text-violet-600">
+            {name}
+          </a>
         </div>
       </td>
       <td>
-        <div className="text-lg font-semibold text-neutral-300">{email}</div>
+        <div className="text-md font-semibold text-neutral-300">{email}</div>
+        <div className=" text-md font-semibold text-neutral-300">{phone}</div>
       </td>
-      <td>
-        <div className=" text-lg font-semibold text-neutral-300">{phone}</div>
-      </td>
-      <td className="mt-2 flex items-center gap-2">
+      <td className="mt-2 flex flex-wrap items-center gap-2">
         {tags.map((tag, index) => {
           return (
             <div key={index} className="rounded-lg  bg-gradient-to-r from-purple-600 to-violet-700 px-2 py-1 text-center text-sm font-semibold text-neutral-300">
@@ -37,7 +37,7 @@ export const CompanyTableItem = ({ name, email, phone, tags, status, onChange })
         })}
       </td>
       <td>
-        <select defaultValue={status} onChange={handleStatusChange} className="select -ml-4 w-full max-w-xs bg-neutral-900 text-lg font-semibold text-neutral-300">
+        <select defaultValue={status} onChange={handleStatusChange} className="text-md select -ml-4 w-full max-w-xs bg-neutral-900 font-semibold text-neutral-300">
           <option disabled selected>
             Wybierz status
           </option>
