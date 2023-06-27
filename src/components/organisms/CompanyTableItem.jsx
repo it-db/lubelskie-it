@@ -6,16 +6,15 @@ const list = {
     opacity: 1,
     y: 0,
     // transition: {
-      // type: 'tween',
-      // duration: 0.5,
+    // type: 'tween',
+    // duration: 0.5,
     // }
-
   },
   hidden: {
     opacity: 0,
-    y: 50
-  }
-}
+    y: 50,
+  },
+};
 
 export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChange, onClick, id }) => {
   useEffect(() => {
@@ -30,7 +29,7 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
     onChange(event, name);
     localStorage.setItem(name, newStatus);
   };
-  console.log(status)
+
   return (
     <motion.tr
       className="border-neutral-800/60"
@@ -38,13 +37,13 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
       initial="hidden"
       animate="visible"
       transition={{
-        delay:  0.1 * id % 0.7,
+        delay: (0.05 * id) % 0.7,
         type: 'tween',
-        duration: 0.3
+        duration: 0.3,
       }}
-      >
+    >
       <td className="w-1/5">
-        <a href={url} target="_blank" className="text-lg font-bold text-neutral-50 transition hover:text-violet-600">
+        <a href={url} target="_blank" className="w-full  py-4 text-lg font-bold text-neutral-50 transition hover:text-violet-600">
           {name}
         </a>
       </td>
@@ -66,9 +65,7 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
 
       <td className="w-1/5">
         <select onChange={handleStatusChange} value={status} className="text-md trunkate select -ml-4 w-full max-w-xs bg-neutral-900 font-semibold text-neutral-300">
-          <option value="status2">
-            Wybierz status
-          </option>
+          <option value="status2">Wybierz status</option>
           <option value="Wysłane CV">Wysłane CV</option>
           <option value="Zaplanowana rozmowa">Zaplanowana rozmowa</option>
           <option value="Po rozmowie">Po rozmowie</option>
