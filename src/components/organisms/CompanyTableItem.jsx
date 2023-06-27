@@ -1,6 +1,23 @@
 import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
 
-export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChange, onClick }) => {
+const list = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    // transition: {
+      // type: 'tween',
+      // duration: 0.5,
+    // }
+
+  },
+  hidden: {
+    opacity: 0,
+    y: 50
+  }
+}
+
+export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChange, onClick, id }) => {
   useEffect(() => {
     const storedStatus = localStorage.getItem(name);
     if (storedStatus && status !== storedStatus) {
@@ -13,9 +30,19 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
     onChange(event, name);
     localStorage.setItem(name, newStatus);
   };
-
+  console.log(status)
   return (
-    <tr className="border-neutral-800/60">
+    <motion.tr
+      className="border-neutral-800/60"
+      variants={list}
+      initial="hidden"
+      animate="visible"
+      transition={{
+        delay:  0.1 * id % 0.7,
+        type: 'tween',
+        duration: 0.3
+      }}
+      >
       <td className="w-1/5">
         <a href={url} target="_blank" className="text-lg font-bold text-neutral-50 transition hover:text-violet-600">
           {name}
@@ -38,8 +65,8 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
       </td>
 
       <td className="w-1/5">
-        <select onChange={handleStatusChange} defaultValue={status} className="text-md trunkate select -ml-4 w-full max-w-xs bg-neutral-900 font-semibold text-neutral-300">
-          <option disabled value="status">
+        <select onChange={handleStatusChange} value={status} className="text-md trunkate select -ml-4 w-full max-w-xs bg-neutral-900 font-semibold text-neutral-300">
+          <option value="status2">
             Wybierz status
           </option>
           <option value="Wysłane CV">Wysłane CV</option>
@@ -49,6 +76,6 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
           <option value="Odrzucone">Odrzucone</option>
         </select>
       </td>
-    </tr>
+    </motion.tr>
   );
 };

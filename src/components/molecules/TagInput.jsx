@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const TagInput = ({ tags, setTags }) => {
-  const [placeholder, setPlaceholder] = useState('Szukaj wpisując nazwy technologii...');
+  const [placeholder, setPlaceholder] = useState('Szukaj firm wpisując nazwy technologii...');
   const [input, setInput] = useState('');
 
   const onChange = (e) => {

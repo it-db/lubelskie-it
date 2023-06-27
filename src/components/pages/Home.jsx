@@ -5,8 +5,24 @@ import { useEffect } from 'react';
 import GitHubButton from 'react-github-btn';
 import useData from '../../hooks/useData';
 import TagInput from '../molecules/TagInput';
+import { motion } from 'framer-motion'
+
+const container = {
+  visible: {
+    opacity: 1,
+    transition: {
+      type: 'tween',
+      duration: 0.5,
+      staggerChildren: 0.1,
+    }
+  },
+  hidden: {
+    opacity: 1
+  }
+}
 
 export const Home = () => {
+  //select filtra
   const [selectedStatusFilter, setSelectedStatusFilter] = useState('');
 
   const [isCheckboxChecked, setIsCheckboxChecked] = useState(() => {
@@ -17,6 +33,7 @@ export const Home = () => {
   const { data, isLoading } = useData();
   const [tags, setTags] = useState([]);
 
+  //
   const [statuses, setStatuses] = useState(() => {
     const storedStatuses = localStorage.getItem('statuses');
     return storedStatuses ? JSON.parse(storedStatuses) : {};
@@ -55,6 +72,35 @@ export const Home = () => {
     }
   }, [statuses, tags]);
 
+  const [isChanged, setIsChanged] = useState(false);
+
+  useEffect(() => {
+    setIsChanged((x) => !x);
+  }, [selectedStatusFilter, tags]);
+
+  const [filteredData, setFilteredData] = useState([]);
+  const [isFiltered, setIsFiltered] = useState(false);
+  useEffect(() => {
+    if (isLoading) {
+      return;
+    }
+    const newData = data.filter((company) => {
+      return !(selectedStatusFilter && statuses[company.name] !== selectedStatusFilter && selectedStatusFilter !== 'Wszystkie')
+    }
+    ).filter((company) => {
+      return !(tags.length > 0 && !company.tags.some((item) => tags.includes(item.toLowerCase())))
+    }
+    )
+    .filter((company) => {
+      return !(isCheckboxChecked && statuses[company.name] === undefined)
+    })
+    setFilteredData(newData)
+    setIsFiltered(true)
+
+  }, [selectedStatusFilter, tags, isCheckboxChecked, isLoading])
+  
+
+
   return (
     <div className="h-auto min-h-screen bg-neutral-900 py-10">
       <div className="flex w-full flex-col items-center justify-center pb-10">
@@ -78,7 +124,7 @@ export const Home = () => {
               </label>
             </div>
 
-            <select className="text-md  select max-w-xs  bg-neutral-800/60 font-semibold text-neutral-400" defaultValue="status" onChange={(event) => setSelectedStatusFilter(event.target.value)}>
+            <select className="text-md  select max-w-xs  bg-neutral-800/60 font-semibold text-neutral-400" onChange={(event) => setSelectedStatusFilter(event.target.value)}>
               <option disabled value="status">
                 Status Rekrutacji
               </option>
@@ -102,25 +148,43 @@ export const Home = () => {
                 </tr>
               </thead>
 
-              <tbody>
-                {isLoading ? (
-                  <tr>Loading...</tr>
-                ) : (
-                  data.map((company) => {
-                    if (selectedStatusFilter && statuses[company.name] !== selectedStatusFilter && selectedStatusFilter !== 'Wszystkie') {
-                      return null;
-                    } else if (tags.length > 0 && !company.tags.some((item) => tags.includes(item.toLowerCase()))) {
-                      return null;
-                    } else if (isCheckboxChecked && statuses[company.name] === undefined) {
-                      return null;
-                    }
-                    return <CompanyTableItem key={company.name} onClick={handleTagClick} name={company.name} email={'fake@gmail.com'} url={company.url} phone={'532 328 213'} tags={company.tags} status={statuses[company.name]} onChange={handleStatusChange} />;
+
+              {isLoading && isFiltered ? (
+                <tr>Loading...</tr>
+              ) : (
+                <motion.tbody
+                  variants={container}
+                  initial="hidden"
+                  animate="visible"
+                  key={isChanged}
+                >
+                  {  
+                    filteredData.map((company, i) => {
+                    return <CompanyTableItem id={i} key={i} onClick={handleTagClick} name={company.name} email={'fake@gmail.com'} url={company.url} phone={'532 328 213'} tags={company.tags} status={statuses[company.name]} onChange={handleStatusChange} />;
                   })
-                )}
-              </tbody>
+
+                    // data.map((company, i) => {
+                    // if (selectedStatusFilter && statuses[company.name] !== selectedStatusFilter && selectedStatusFilter !== 'Wszystkie') {
+                    // return null;
+                    // } else if (tags.length > 0 && !company.tags.some((item) => tags.includes(item.toLowerCase()))) {
+                    // return null;
+                    // } else if (isCheckboxChecked && statuses[company.name] === undefined) {
+                    // return null;
+                    // }
+                    // return <CompanyTableItem id={i} key={i} onClick={handleTagClick} name={company.name} email={'fake@gmail.com'} url={company.url} phone={'532 328 213'} tags={company.tags} status={statuses[company.name]} onChange={handleStatusChange} />;
+                    // })
+                  }
+
+                </motion.tbody>
+              )}
+
             </table>
+            {isLoading ? (
+                <></>
+              ) : (
             <div className="mb-3 w-auto border-t  border-neutral-800/60 py-4 text-center font-semibold  text-neutral-200">Dane z dnia 28.07.2023</div>
-          </div>
+              )}
+            </div>
         </div>
       </div>
 
