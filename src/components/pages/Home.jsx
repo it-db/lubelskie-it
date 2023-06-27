@@ -36,7 +36,16 @@ export const Home = () => {
   //list of companies
   const { data, isLoading } = useData();
 
+  //list of real time tags
   const [tags, setTags] = useState([]);
+
+  const [submittedTags, setSubmittedTags] = useState([]);
+
+  const searchByTags = () => {
+    let toLoverCaseTags = tags.map((tag) => tag.toLowerCase());
+    setSubmittedTags(toLoverCaseTags);
+    console.log(submittedTags)
+  }
 
   return (
     <div className="h-auto min-h-screen bg-neutral-900 py-10">
@@ -50,7 +59,7 @@ export const Home = () => {
           <div className="flex gap-5 border-b-2 border-neutral-800/30 pb-10 sm:w-4/5 md:w-full lg:w-full">
             <TagInput tags={tags} setTags={setTags} />
             {/* <input type="text" placeholder="Szukaj wpisując nazwy firm lub technologie..." className="input h-14 w-full bg-neutral-800/60 text-lg font-semibold text-neutral-300 outline-1 placeholder:font-semibold placeholder:text-neutral-500   " /> */}
-            <button className="text-md btn h-14 w-28 bg-neutral-800/60 font-bold text-neutral-50 transition duration-150 ease-linear hover:bg-violet-700 ">Szukaj</button>
+            <button onClick={searchByTags} className="text-md btn h-14 w-28 bg-neutral-800/60 font-bold text-neutral-50 transition duration-150 ease-linear hover:bg-violet-700 ">Szukaj</button>
           </div>
 
           <div className="mt-10 flex justify-between lg:w-full">
@@ -94,6 +103,10 @@ export const Home = () => {
                   data.map((company) => {
                     if (selectedStatusFilter && statuses[company.name] !== selectedStatusFilter && selectedStatusFilter !== 'Wszystkie') {
                       return null;
+                    }
+                    else if(submittedTags.length > 0 &&  !(company.tags.some(item => submittedTags.includes(item.toLowerCase())))) {
+                      return null;
+                    
                     } else if (isCheckboxChecked && statuses[company.name] === undefined) {
                       return null;
                     }

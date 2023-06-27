@@ -28,10 +28,14 @@ const TagInput = ({ tags, setTags }) => {
           }
         //   console.log(tags)
       };
+
+      const deleteTag = (index) => {
+        setTags(prevState => prevState.filter((tag, i) => i !== index))
+      }
     
     return(
         <div className='tagInput bg-neutral-800 flex  items-center overflow-x-scroll w-full max-w-full pl-2 rounded text-black'>
-            {tags.map((tag) => (
+            {tags.map((tag, index) => (
                 <div className="h-8 flex justify-center items-center rounded-lg  bg-gradient-to-r from-purple-600 to-violet-700 px-2 py-1 text-center text-sm font-semibold text-neutral-300 mr-2">
                   {tag}
                   <button onClick={() => deleteTag(index)} className='flex p-1 border-0 bg-transparent cursor-pointer text-white'>x</button>
