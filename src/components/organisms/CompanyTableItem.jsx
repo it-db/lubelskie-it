@@ -38,7 +38,7 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
       </td>
 
       <td className="w-1/5">
-        <select onChange={handleStatusChange} defaultValue="status" className="text-md trunkate select -ml-4 w-full max-w-xs bg-neutral-900 font-semibold text-neutral-300">
+        <select onChange={handleStatusChange} defaultValue={status} className="text-md trunkate select -ml-4 w-full max-w-xs bg-neutral-900 font-semibold text-neutral-300">
           <option disabled value="status">
             Wybierz status
           </option>
