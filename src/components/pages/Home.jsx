@@ -71,12 +71,6 @@ export const Home = () => {
     }
   }, [statuses, tags]);
 
-  const [isChanged, setIsChanged] = useState(false);
-
-  useEffect(() => {
-    setIsChanged((x) => !x);
-  }, [selectedStatusFilter, tags]);
-
   const [filteredData, setFilteredData] = useState([]);
   const [isFiltered, setIsFiltered] = useState(false);
   useEffect(() => {
@@ -147,8 +141,13 @@ export const Home = () => {
               {isLoading && isFiltered ? (
                 <tr>Loading...</tr>
               ) : (
-                <motion.tbody variants={container} initial="hidden" animate="visible" key={isChanged}>
-                  {
+                <motion.tbody
+                  variants={container}
+                  initial="hidden"
+                  animate="visible"
+                  key={filteredData}
+                >
+                  {  
                     filteredData.map((company, i) => {
                       return <CompanyTableItem id={i} key={i} onClick={handleTagClick} name={company.name} email={'fake@gmail.com'} url={company.url} phone={'532 328 213'} tags={company.tags} status={statuses[company.name]} onChange={handleStatusChange} />;
                     })
