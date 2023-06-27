@@ -72,12 +72,6 @@ export const Home = () => {
     }
   }, [statuses, tags]);
 
-  const [isChanged, setIsChanged] = useState(false);
-
-  useEffect(() => {
-    setIsChanged((x) => !x);
-  }, [selectedStatusFilter, tags]);
-
   const [filteredData, setFilteredData] = useState([]);
   const [isFiltered, setIsFiltered] = useState(false);
   useEffect(() => {
@@ -96,7 +90,8 @@ export const Home = () => {
     })
     setFilteredData(newData)
     setIsFiltered(true)
-
+    console.log("useEffect moving")
+  // }, [isCheckboxChecked])
   }, [selectedStatusFilter, tags, isCheckboxChecked, isLoading])
   
 
@@ -156,7 +151,7 @@ export const Home = () => {
                   variants={container}
                   initial="hidden"
                   animate="visible"
-                  key={isChanged}
+                  key={filteredData}
                 >
                   {  
                     filteredData.map((company, i) => {

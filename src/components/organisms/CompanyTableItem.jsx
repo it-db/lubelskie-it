@@ -30,7 +30,7 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
     onChange(event, name);
     localStorage.setItem(name, newStatus);
   };
-  console.log(status)
+  // console.log(status)
   return (
     <motion.tr
       className="border-neutral-800/60"
