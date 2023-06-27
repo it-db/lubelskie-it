@@ -21,10 +21,12 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
           {name}
         </a>
       </td>
+
       <td className="w-1/5">
-        <div className="text-md font-semibold text-neutral-300">{email}</div>
+        <div className="text-md mb-1 font-semibold text-neutral-300">{email}</div>
         <div className=" text-md font-semibold text-neutral-300">{phone}</div>
       </td>
+
       <td className="my-3 flex w-auto flex-wrap items-center gap-2">
         {tags.map((tag, index) => {
           return (
@@ -34,8 +36,9 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
           );
         })}
       </td>
+
       <td className="w-1/5">
-        <select defaultValue={status} onChange={handleStatusChange} className="text-md select -ml-4 w-full max-w-xs truncate bg-neutral-900 font-semibold text-neutral-300">
+        <select defaultValue={status} onChange={handleStatusChange} className="text-md trunkate select -ml-4 w-full max-w-xs bg-neutral-900 font-semibold text-neutral-300">
           <option disabled selected>
             Wybierz status
           </option>
