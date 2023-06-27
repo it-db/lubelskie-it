@@ -5,7 +5,7 @@ import GitHubButton from 'react-github-btn';
 import useData from '../../hooks/useData';
 import TagInput from '../molecules/TagInput';
 import { motion } from 'framer-motion';
-import AnimText from '../molecules/AnimText';
+import { AnimatedText } from '../molecules/AnimatedText';
 
 const container = {
   visible: {
@@ -95,13 +95,9 @@ export const Home = () => {
   return (
     <div className="h-auto min-h-screen bg-neutral-900 py-10">
       <div className="flex w-full flex-col items-center justify-center pb-10">
-        <motion.div transition={{duration: 1, delay: 0.1}} initial={{opacity: 0}} animate={{opacity: 1}} className="bg-gradient-to-r from-purple-600 to-violet-700 bg-clip-text text-6xl font-extrabold tracking-tight text-transparent">
-          {/* <AnimText text="Lubelskie IT" delay={0.1} /> */}
-          Lubelskie IT
-        </motion.div>
+        <AnimatedText text={`Lubelskie IT`} isBig delay={0} />
+        <AnimatedText text={`Baza Danych Lubelskich Firm IT`} delay={0.15} />
 
-        {/* <div className="mt-2 text-2xl font-semibold text-neutral-300">Baza Danych Lubelskich Firm IT</div> */}
-        <AnimText text="Baza Danych Lubelskich Firm IT" delay={0.2} />
         <div className="mt-10 flex flex-col items-center justify-center md:w-4/5 lg:w-4/5 ">
           <div className="flex gap-5 border-b-2 border-neutral-800/30 pb-10 sm:w-4/5 md:w-full lg:w-full">
             <TagInput tags={tags} setTags={setTags} />
@@ -144,13 +140,8 @@ export const Home = () => {
               {isLoading && isFiltered ? (
                 <tr>Loading...</tr>
               ) : (
-                <motion.tbody
-                  variants={container}
-                  initial="hidden"
-                  animate="visible"
-                  key={filteredData}
-                >
-                  {  
+                <motion.tbody variants={container} initial="hidden" animate="visible" key={filteredData}>
+                  {
                     filteredData.map((company, i) => {
                       return <CompanyTableItem id={i} key={i} onClick={handleTagClick} name={company.name} email={'fake@gmail.com'} url={company.url} phone={'532 328 213'} tags={company.tags} status={statuses[company.name]} onChange={handleStatusChange} />;
                     })
