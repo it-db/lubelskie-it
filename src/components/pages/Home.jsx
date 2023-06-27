@@ -95,7 +95,7 @@ export const Home = () => {
   return (
     <div className="h-auto min-h-screen bg-neutral-900 py-10">
       <div className="flex w-full flex-col items-center justify-center pb-10">
-        <motion.div transition={{duration: 1, delay: 0.1}} initial={{opacity: 0}} animate={{opacity: 1}} className="bg-gradient-to-r from-purple-600 to-violet-700 bg-clip-text text-6xl font-extrabold tracking-tight text-transparent">
+        <motion.div transition={{duration: 1, delay: 0.1}} initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} className="bg-gradient-to-r from-purple-600 to-violet-700 bg-clip-text text-6xl font-extrabold tracking-tight text-transparent">
           {/* <AnimText text="Lubelskie IT" delay={0.1} /> */}
           Lubelskie IT
         </motion.div>
