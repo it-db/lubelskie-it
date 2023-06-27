@@ -1080,7 +1080,7 @@
         "PHP"
      ],
      "email":"",
-     "number":""
+     "number":"814635466"
   },
   {
      "name":"VentureDevs",
@@ -1090,19 +1090,8 @@
         "Mobile",
         "Web"
      ],
-     "email":"",
-     "number":""
-  },
-  {
-     "name":"Zareklamy",
-     "url":"https://zareklamy.com/",
-     "tags":[
-        "Admin",
-        "Architect",
-        "PHP"
-     ],
-     "email":"",
-     "number":""
+     "email":"nope",
+     "number":"nope"
   },
   {
      "name":"ZETO",
@@ -1110,7 +1099,7 @@
      "tags":[
         
      ],
-     "email":"",
-     "number":""
+     "email":"info@zeto.lublin.pl",
+     "number":"817184200"
   }
 ]

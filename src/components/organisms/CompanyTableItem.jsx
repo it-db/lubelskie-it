@@ -37,6 +37,7 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
       variants={list}
       initial="hidden"
       animate="visible"
+      whileHover={{ scale: 1.02 }}
       transition={{
         delay: (0.05 * id) % 0.7,
         type: 'tween',
@@ -62,9 +63,9 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
       <td className="my-3 flex w-auto flex-wrap items-center gap-2">
         {tags.map((tag, index) => {
           return (
-            <button key={index} onClick={() => onClick(tag.toLowerCase())} className="rounded-lg bg-gradient-to-r from-purple-600 to-violet-700 px-2 py-1 text-center text-sm font-semibold text-neutral-50 hover:from-purple-700 hover:to-violet-800">
+            <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} key={index} onClick={() => onClick(tag.toLowerCase())} className="rounded-lg bg-gradient-to-r from-purple-600 to-violet-700 px-2 py-1 text-center text-sm font-semibold text-neutral-50 hover:from-purple-700 hover:to-violet-800">
               {tag}
-            </button>
+            </motion.button>
           );
         })}
       </td>
