@@ -8,13 +8,27 @@ import TagInput from '../molecules/TagInput';
 
 export const Home = () => {
   const [selectedStatusFilter, setSelectedStatusFilter] = useState('');
-  const [isCheckboxChecked, sWetIsCheckboxChecked] = useState(false);
-  const [isSearchActive, setIsSearchActive] = useState(false);
+
+  const [isCheckboxChecked, setIsCheckboxChecked] = useState(() => {
+    const storedCheckboxValue = localStorage.getItem('isCheckboxChecked');
+    return storedCheckboxValue ? JSON.parse(storedCheckboxValue) : false;
+  });
+
+  const { data, isLoading } = useData();
+  const [tags, setTags] = useState([]);
 
   const [statuses, setStatuses] = useState(() => {
     const storedStatuses = localStorage.getItem('statuses');
     return storedStatuses ? JSON.parse(storedStatuses) : {};
   });
+
+  const handleTagClick = (name) => {
+    if (tags.includes(name)) {
+      return;
+    }
+
+    setTags((prevTags) => [...prevTags, name]);
+  };
 
   const handleStatusChange = (event, name) => {
     const newStatus = event.target.value;
@@ -25,27 +39,21 @@ export const Home = () => {
   };
 
   const handleCheckboxChange = () => {
-    setIsCheckboxChecked(!isCheckboxChecked);
-    localStorage.setItem('onlyRecruiting', isCheckboxChecked);
+    setIsCheckboxChecked((prevValue) => {
+      const newValue = !prevValue;
+      localStorage.setItem('isCheckboxChecked', JSON.stringify(newValue));
+      return newValue;
+    });
   };
 
   useEffect(() => {
     localStorage.setItem('statuses', JSON.stringify(statuses));
-  }, [statuses]);
 
-  //list of companies
-  const { data, isLoading } = useData();
-
-  //list of real time tags
-  const [tags, setTags] = useState([]);
-
-  const [submittedTags, setSubmittedTags] = useState([]);
-
-  const searchByTags = () => {
-    let toLoverCaseTags = tags.map((tag) => tag.toLowerCase());
-    setSubmittedTags(toLoverCaseTags);
-    console.log(submittedTags)
-  }
+    const storedCheckboxValue = localStorage.getItem('isCheckboxChecked');
+    if (storedCheckboxValue) {
+      setIsCheckboxChecked(JSON.parse(storedCheckboxValue));
+    }
+  }, [statuses, tags]);
 
   return (
     <div className="h-auto min-h-screen bg-neutral-900 py-10">
@@ -58,8 +66,6 @@ export const Home = () => {
         <div className="mt-10 flex flex-col items-center justify-center md:w-4/5 lg:w-4/5 ">
           <div className="flex gap-5 border-b-2 border-neutral-800/30 pb-10 sm:w-4/5 md:w-full lg:w-full">
             <TagInput tags={tags} setTags={setTags} />
-            {/* <input type="text" placeholder="Szukaj wpisując nazwy firm lub technologie..." className="input h-14 w-full bg-neutral-800/60 text-lg font-semibold text-neutral-300 outline-1 placeholder:font-semibold placeholder:text-neutral-500   " /> */}
-            <button onClick={searchByTags} className="text-md btn h-14 w-28 bg-neutral-800/60 font-bold text-neutral-50 transition duration-150 ease-linear hover:bg-violet-700 ">Szukaj</button>
           </div>
 
           <div className="mt-10 flex justify-between lg:w-full">
@@ -72,8 +78,8 @@ export const Home = () => {
               </label>
             </div>
 
-            <select className="text-md  select max-w-xs  bg-neutral-800/60 font-semibold text-neutral-400" onChange={(event) => setSelectedStatusFilter(event.target.value)}>
-              <option disabled selected>
+            <select className="text-md  select max-w-xs  bg-neutral-800/60 font-semibold text-neutral-400" defaultValue="status" onChange={(event) => setSelectedStatusFilter(event.target.value)}>
+              <option disabled value="status">
                 Status Rekrutacji
               </option>
               <option value="Wszystkie">Wszystkie</option>
@@ -88,7 +94,7 @@ export const Home = () => {
           <div className="mt-5 w-full overflow-x-auto">
             <table className="table ">
               <thead>
-                <tr className="border-neutral-800/60 ">
+                <tr className="border-neutral-800/60">
                   <th className="text-neutral-500">Firma</th>
                   <th className="text-neutral-500">Kontakt</th>
                   <th className="text-neutral-500">Tagi</th>
@@ -103,14 +109,12 @@ export const Home = () => {
                   data.map((company) => {
                     if (selectedStatusFilter && statuses[company.name] !== selectedStatusFilter && selectedStatusFilter !== 'Wszystkie') {
                       return null;
-                    }
-                    else if(submittedTags.length > 0 &&  !(company.tags.some(item => submittedTags.includes(item.toLowerCase())))) {
+                    } else if (tags.length > 0 && !company.tags.some((item) => tags.includes(item.toLowerCase()))) {
                       return null;
-                    
                     } else if (isCheckboxChecked && statuses[company.name] === undefined) {
                       return null;
                     }
-                    return <CompanyTableItem key={company.name} name={company.name} email={'fake@gmail.com'} url={company.url} phone={'532 328 213'} tags={company.tags} status={statuses[company.name]} onChange={handleStatusChange} />;
+                    return <CompanyTableItem key={company.name} onClick={handleTagClick} name={company.name} email={'fake@gmail.com'} url={company.url} phone={'532 328 213'} tags={company.tags} status={statuses[company.name]} onChange={handleStatusChange} />;
                   })
                 )}
               </tbody>

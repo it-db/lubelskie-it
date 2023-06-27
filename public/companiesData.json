@@ -1,684 +1,1116 @@
 [
-    {
-        "name": "2cW.pl",
-        "url": "https://2cw.pl/",
-        "tags": [   "Designer", "PHP", "Web" ]
-      },
-      {
-        "name": "300 DEVS",
-        "url": "https://300devs.com/",
-        "tags": [
-           
-          "Admin",
-          "Designer",
-          "Architect",
-          "JS",
-          "Mobile",
-          "PHP",
-          "Tester",
-          "Web"
-        ]
-      },
-      {
-        "name": "9bits",
-        "url": "http://www.9bits.com/",
-        "tags": [   "Designer", "JS", "Web" ]
-      },
-      {
-        "name": "Agencja Reklamowa Cumulus",
-        "url": "http://agencjacumulus.pl/",
-        "tags": [   "Designer", "Mobile", "Web" ]
-      },
-      {
-        "name": "Akanza",
-        "url": "http://akanza.pl/",
-        "tags": [   "JS", "PHP", "Python" ]
-      },
-      {
-        "name": "Altkom Software & Consulting",
-        "url": "https://altkomsoftware.pl/",
-        "tags": [   "Architect" ]
-      },
-      {
-        "name": "ANTARA",
-        "url": "http://www.antara.pl/",
-        "tags": [   "JS", "Web" ]
-      },
-      {
-        "name": "ArchiDoc SA",
-        "url": "http://www.archidoc.pl/",
-        "tags": [   "C++", "Tester", "Web" ]
-      },
-      { "name": "Arcus SI", "url": "http://www.arcussi.pl/", "tags": [".NET"] },
-      {
-        "name": "Asseco Business Solutions",
-        "url": "https://kariera.assecobs.pl/",
-        "tags": [
-          "Admin",
-          "BD",
-          "Frontend",
-          "Designer",
-          "Architect",
-          "Java",
-          "JS",
-          "ML",
-          "Mobile",
-          "PHP",
-          "Python",
-          "Scrum",
-          "Tester",
-          "Web"
-        ]
-      },
-      {
-        "name": "Billennium",
-        "url": "http://www.billennium.pl/",
-        "tags": [   "Frontend", "Mobile", "Tester" ]
-      },
-      {
-        "name": "Black Eye Games",
-        "url": "http://blackeyegames.com/",
-        "tags": [   "Tester" ]
-      },
-      { "name": "Blueberry", "url": "http://www.bb-group.pl/", "tags": ["Web"] },
-      {
-        "name": "Bottega IT Minds",
-        "url": "https://www.bottega.com.pl/",
-        "tags": [   "Architect" ]
-      },
-      {
-        "name": "Britenet",
-        "url": "http://britenet.com.pl/",
-        "tags": [
-           
-          "Frontend",
-          "Java",
-          "JS"
-        ]
-      },
-      {
-        "name": "BUSINESS SURPLUS",
-        "url": "ttp://www.business-surplus.pl",
-        "tags": [   "C++", "Mobile" ]
-      },
-      {
-        "name": "Capgemini",
-        "url": "https://www.capgemini.com/pl-pl/",
-        "tags": [
-           
-          "Admin",
-          "C++",
-          "Architect"
-        ]
-      },
-      {
-        "name": "Centralny Ośrodek Informatyki",
-        "url": "https://lwit.lublin.eu/firmy-lubelskiego-it/",
-        "tags": [
-           
-           
-          "Architect",
-          "Java",
-          "JS",
-          "Tester",
-          "Web"
-        ]
-      },
-      {
-        "name": "CODEMA Software House",
-        "url": "https://codema.io/",
-        "tags": [
-           
-          "Admin",
-          "Architect",
-          "JS",
-          "Mobile",
-          "PHP",
-          "Tester",
-          "Web"
-        ]
-      },
-      {
-        "name": "Codete",
-        "url": "http://www.codete.com/career",
-        "tags": [   "JS", "Mobile", "PHP" ]
-      },
-      {
-        "name": "Cognimetrica",
-        "url": "https://cognimetrica.com/",
-        "tags": [
-           
-          "Architect",
-          "ML",
-          "Web"
-        ]
-      },
-      { "name": "Comarch", "url": "http://www.comarch.pl/", "tags": [         
-         "Admin",
-      "BD",
-      "Frontend",
-      "Designer",
-      "Architect",
-      "Java",
-      "JS",
-      "Mobile",
-      "PHP",
-      "Python",
-      "Scrum",
-      "Tester",
-      "Web"] },
-      {
-        "name": "CompuGroup Medical Polska",
-        "url": "https://www.cgm.com/pol_pl",
-        "tags": [
-           
-          "Architect",
-          "Tester",
-          "Web"
-        ]
-      },
-      {
-        "name": "CosmoEye",
-        "url": "https://www.cosmoeye.ai/",
-        "tags": [
-           
-          "C++",
-          "Admin",
-          "PHP"
-        ]
-      },
-      {
-        "name": "Damiko s.c.",
-        "url": "https://www.damiko.pl/",
-        "tags": [
-           
-          "Admin",
-          "Admin",
-          "PHP"
-        ]
-      },
-      {
-        "name": "Data Flow",
-        "url": "http://www.dtfl.pl/",
-        "tags": [   "JS", "PHP", "Web" ]
-      },
-      {
-        "name": "DataArt Poland",
-        "url": "http://www.dataart.com.pl/",
-        "tags": [
-           
-          "Architect",
-          "JS",
-          "Web"
-        ]
-      },
-      {
-        "name": "Derave Software",
-        "url": "https://deravesoftware.com/",
-        "tags": [
-           
-          "Architect",
-          "JS",
-          "PHP",
-          "Web"
-        ]
-      },
-      {
-        "name": "Devcomm ICT",
-        "url": "http://devcomm.pl/",
-        "tags": [   "JS", "PHP", "Web" ]
-      },
-      {
-        "name": "Digit.on",
-        "url": "http://www.digiton.com.pl/",
-        "tags": [    ]
-      },
-      {
-        "name": "Dogtronic",
-        "url": "https://dogtronic.io/",
-        "tags": [   "JS", "Mobile", "Web" ]
-      },
-      {
-        "name": "E-Studio Software",
-        "url": "http://estudio.com.pl/",
-        "tags": [    ]
-      },
-      {
-        "name": "Edge One Solutions",
-        "url": "http://www.edge1s.com/",
-        "tags": [   "JS", "Tester", "Web" ]
-      },
-      {
-        "name": "eFactor",
-        "url": "http://efactor.pl/",
-        "tags": [   "Mobile", "PHP" ]
-      },
-      { "name": "eLeader", "url": "http://www.eleader.biz/", "tags": [    ] },
-      {
-        "name": "EMBIQ",
-        "url": "http://www.embiq.com/",
-        "tags": [
-           
-          "C++",
-          "JS",
-          "Mobile",
-          "Python"
-        ]
-      },
-      {
-        "name": "emedia",
-        "url": "https://emedia.com.pl/",
-        "tags": [   "C++", "Mobile", "Web" ]
-      },
-      {
-        "name": "Finanteq S.A.",
-        "url": "http://finanteq.com/",
-        "tags": [
-           
-          "Architect",
-          "Mobile",
-          "Tester"
-        ]
-      },
-      {
-        "name": "Freeline",
-        "url": "https://www.freeline.pl/",
-        "tags": [   "Designer", "PHP", "Web" ]
-      },
-      {
-        "name": "Inetum Polska",
-        "url": "https://inetum.pl/pl/",
-        "tags": [   "JS", "Tester", "Web" ]
-      },
-      {
-        "name": "GIS-Expert",
-        "url": "http://www.gis-expert.pl/",
-        "tags": [   "Mobile", "Web" ]
-      },
-      {
-        "name": "HSNet.pl",
-        "url": "https://lwit.lublin.eu/firmy-lubelskiego-it/",
-        "tags": [   "Designer", "JS", "PHP" ]
-      },
-      {
-        "name": "IBIF",
-        "url": "https://www.ibif.pl/",
-        "tags": [   "Designer", "JS", "Web" ]
-      },
-      {
-        "name": "ICN Projekty IT",
-        "url": "http://www.icn.pl/",
-        "tags": [   "C++", "JS", "Tester" ]
-      },
-      {
-        "name": "Industi",
-        "url": "http://industi.com/",
-        "tags": [
-           
-          "Admin",
-          "Designer",
-          "Architect",
-          "JS",
-          "Mobile",
-          "PHP",
-          "Tester",
-          "Web"
-        ]
-      },
-      { "name": "Infinite", "url": "http://infinite.pl/", "tags": [    ] },
-      {
-        "name": "InteliWISE",
-        "url": "http://inteliwise.pl/",
-        "tags": [   "JS", "Web" ]
-      },
-      {
-        "name": "INTEN",
-        "url": "http://www.inten.pl/",
-        "tags": [   "Admin" ]
-      },
-      {
-        "name": "Intive",
-        "url": "https://www.intive.com/",
-        "tags": [   "JS", "Mobile", "Tester" ]
-      },
-      {
-        "name": "IT.expert",
-        "url": "https://lwit.lublin.eu/firmy-lubelskiego-it/",
-        "tags": [    ]
-      },
-      {
-        "name": "ITligent Group",
-        "url": "http://www.itligent.pl/",
-        "tags": [   "C++", "JS", "PHP" ]
-      },
-      {
-        "name": "Uptime Development",
-        "url": "https://www.uptimedevelopment.pl/",
-        "tags": [   "Mobile", "Tester", "Web" ]
-      },
-      { "name": "Klif", "url": "http://www.klif.com.pl/", "tags": [    ] },
-      {
-        "name": "KodoGrafia",
-        "url": "http://kodografia.pl/",
-        "tags": [   "Tester", "Web" ]
-      },
-      {
-        "name": "Kolorowe Projekty",
-        "url": "https://koloroweprojekty.pl/",
-        "tags": [
-           
-          "Admin",
-          "Designer",
-          "JS",
-          "PHP",
-          "Web"
-        ]
-      },
-      {
-        "name": "KONICA MINOLTA BUSINESS SOLUTIONS POLSKA",
-        "url": "http://www.konicaminolta.pl/",
-        "tags": [
-           
-          "Architect",
-          "Admin"
-        ]
-      },
-      {
-        "name": "Lingaro",
-        "url": "https://lingarogroup.com/lublin/",
-        "tags": [
-           
-          "Admin",
-          "Architect",
-          "Web"
-        ]
-      },
-      {
-        "name": "MIKROBIT",
-        "url": "http://www.mikrobit.pl/",
-        "tags": [   "Admin" ]
-      },
-      {
-        "name": "Milo Solutions",
-        "url": "https://milosolutions.com/",
-        "tags": [   "Mobile", "Tester", "Web" ]
-      },
-      {
-        "name": "Mobica",
-        "url": "http://www.mobica.com/",
-        "tags": [
-           
-          "Architect",
-          "Tester",
-          "Web"
-        ]
-      },
-      {
-        "name": "Mustang Marketing",
-        "url": "http://www.mustang-marketing.pl/",
-        "tags": [   "Designer", "PHP", "Web" ]
-      },
-      { "name": "Netkata", "url": "http://www.netkata.com/", "tags": [    ] },
-      {
-        "name": "Netrix SA",
-        "url": "http://sa.netrix.com.pl/",
-        "tags": [
-           
-          "Admin",
-          "Mobile",
-          "Tester"
-        ]
-      },
-      {
-        "name": "News Hub Media",
-        "url": "https://www.newshubmedia.com/",
-        "tags": [   "Designer", "Mobile", "Web" ]
-      },
-      {
-        "name": "Nocowanie.pl",
-        "url": "https://www.nocowanie.pl/",
-        "tags": [   "PHP", "Tester" ]
-      },
-      {
-        "name": "Nurseum",
-        "url": "http://www.nurseum.pl/",
-        "tags": [    ]
-      },
-      {
-        "name": "Onitum Software",
-        "url": "https://www.onitum.pl/",
-        "tags": [   "JS", "Mobile", "Web" ]
-      },
-      {
-        "name": "Onwelo",
-        "url": "https://onwelo.com/",
-        "tags": [
-           
-          "Architect",
-          "JS",
-          "Mobile"
-        ]
-      },
-      {
-        "name": "OPTeam",
-        "url": "http://www.opteam.pl/",
-        "tags": [   "Designer", "Web" ]
-      },
-      {
-        "name": "POLMARK.net",
-        "url": "https://polmark.net/",
-        "tags": [   "Admin" ]
-      },
-      {
-        "name": "Polska Grupa IT",
-        "url": "http://polskagrupa.it/",
-        "tags": [    ]
-      },
-      {
-        "name": "PolSource S.A.",
-        "url": "http://www.polsource.com/",
-        "tags": [   "JS", "Tester", "Web" ]
-      },
-      {
-        "name": "Predica",
-        "url": "https://www.predicagroup.com/",
-        "tags": [
-           
-          "Architect",
-          "Mobile",
-          "Web"
-        ]
-      },
-      {
-        "name": "Proacta",
-        "url": "http://www.proacta.pl/",
-        "tags": [   "C++", "JS", "Tester" ]
-      },
-      {
-        "name": "Proama",
-        "url": "http://www.proama.pl/",
-        "tags": [
-           
-          "Admin",
-          "Architect",
-          "Web"
-        ]
-      },
-      {
-        "name": "Pyramid Games",
-        "url": "https://pyramid.games/",
-        "tags": [   "Designer" ]
-      },
-      {
-        "name": "R-SOFT STUDIO",
-        "url": "http://rsoftstudio.pl/",
-        "tags": [   "Mobile", "PHP", "Web" ]
-      },
-      {
-        "name": "Rosiek Solutions",
-        "url": "https://rosieksolutions.pl/",
-        "tags": [
-           
-          "Architect",
-          "Admin",
-          "Tester"
-        ]
-      },
-      {
-        "name": "rozwoj-oprogramowania.pl",
-        "url": "https://rozwoj-oprogramowania.pl/",
-        "tags": [   "Admin", "PHP", "Web" ]
-      },
-      { "name": "Sii", "url": "http://www.sii.pl/", "tags": [    ] },
-      {
-        "name": "Skuteczne media – Skuteczne media – wirtualne wsparcie biznesu",
-        "url": "https://liliannatrojanowska.pl/",
-        "tags": [   "Designer" ]
-      },
-      {
-        "name": "Smart Education International",
-        "url": "https://smarteducation.pl/",
-        "tags": [
-           
-          "Admin",
-          "PHP",
-          "Tester"
-        ]
-      },
-      {
-        "name": "Smart Ninja",
-        "url": "http://www.smartninja-lublin.pl/",
-        "tags": [   "C++", "JS", "Web" ]
-      },
-      {
-        "name": "Softdeco",
-        "url": "http://www.softdeco.pl/",
-        "tags": [   "C++", "JS", "Mobile" ]
-      },
-      { "name": "SoftSystem", "url": "http://www.softsystem.pl/", "tags": [    ] },
-      {
-        "name": "Sollers Consulting",
-        "url": "https://sollers.eu/career/",
-        "tags": [   "C++", "JS", "Web" ]
-      },
-      {
-        "name": "Solveris",
-        "url": "http://solveris.pl/",
-        "tags": [
-           
-          "C++",
-          "Architect",
-          "Web"
-        ]
-      },
-      {
-        "name": "SPARK-IT",
-        "url": "https://lwit.lublin.eu/firmy-lubelskiego-it/",
-        "tags": [
-           
-           
-          "Admin",
-          "Admin"
-        ]
-      },
-      {
-        "name": "Spółka Inżynierów SIM",
-        "url": "http://www.sim.com.pl/",
-        "tags": [    ]
-      },
-      {
-        "name": "Star Technology",
-        "url": "http://www.startechnology.pl/",
-        "tags": [
-           
-          "Architect",
-          "PHP",
-          "Web"
-        ]
-      },
-      {
-        "name": "startstop.pl",
-        "url": "http://startstop.pl/",
-        "tags": [   "JS", "Mobile", "Tester" ]
-      },
-      {
-        "name": "TEAM International Poland",
-        "url": "https://www.teaminternational.com/",
-        "tags": [   "Mobile", "Tester", "Web" ]
-      },
-      {
-        "name": "telecomWORLD",
-        "url": "http://www.telecomworld.pl/",
-        "tags": [   "Tester" ]
-      },
-      {
-        "name": "Tesseract Dev",
-        "url": "http://www.tesseractdev.com/",
-        "tags": [
-           
-          "C++",
-          "Architect",
-          "Tester"
-        ]
-      },
-      {
-        "name": "Transition Technologies-Software",
-        "url": "http://www.ttsw.com.pl/",
-        "tags": [
-           
-          "Frontend",
-          "Architect",
-          "Java",
-          "JS",
-          "Scrum",
-          "Tester"
-        ]
-      },
-      { "name": "Trimetis", "url": "http://www.trimetis.eu/", "tags": [    ] },
-      {
-        "name": "UDTech",
-        "url": "https://udtech.pl/",
-        "tags": [
-           
-          "C++",
-          "Architect",
-          "Admin"
-        ]
-      },
-      {
-        "name": "Verestro SA",
-        "url": "https://verestro.com/kariera#oferty",
-        "tags": [   "JS", "PHP" ]
-      },
-      {
-        "name": "VADO",
-        "url": "http://www.vado.pl/",
-        "tags": [   "JS" ]
-      },
-      {
-        "name": "VELVERO",
-        "url": "https://www.velvero.pl/",
-        "tags": [
-           
-          "Admin",
-          "Admin",
-          "PHP"
-        ]
-      },
-      {
-        "name": "VentureDevs",
-        "url": "https://venturedevs.com/",
-        "tags": [   "JS", "Mobile", "Web" ]
-      },
-      {
-        "name": "Zareklamy",
-        "url": "https://zareklamy.com/",
-        "tags": [
-           
-          "Admin",
-          "Architect",
-          "PHP"
-        ]
-      },
-      { "name": "ZETO", "url": "http://www.zeto.lublin.pl/", "tags": [    ] }
+  {
+     "name":"2cW.pl",
+     "url":"https://2cw.pl/",
+     "tags":[
+        "Designer",
+        "PHP",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"300 DEVS",
+     "url":"https://300devs.com/",
+     "tags":[
+        "Admin",
+        "Designer",
+        "Architect",
+        "JS",
+        "Mobile",
+        "PHP",
+        "Tester",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"9bits",
+     "url":"http://www.9bits.com/",
+     "tags":[
+        "Designer",
+        "JS",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Agencja Reklamowa Cumulus",
+     "url":"http://agencjacumulus.pl/",
+     "tags":[
+        "Designer",
+        "Mobile",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Akanza",
+     "url":"http://akanza.pl/",
+     "tags":[
+        "JS",
+        "PHP",
+        "Python"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Altkom Software & Consulting",
+     "url":"https://altkomsoftware.pl/",
+     "tags":[
+        "Architect"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"ANTARA",
+     "url":"http://www.antara.pl/",
+     "tags":[
+        "JS",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"ArchiDoc SA",
+     "url":"http://www.archidoc.pl/",
+     "tags":[
+        "C++",
+        "Tester",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Arcus SI",
+     "url":"http://www.arcussi.pl/",
+     "tags":[
+        ".NET"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Asseco Business Solutions",
+     "url":"https://kariera.assecobs.pl/",
+     "tags":[
+        "Admin",
+        "Database",
+        "Frontend",
+        "Designer",
+        "Architect",
+        "Java",
+        "JS",
+        "ML",
+        "Mobile",
+        "PHP",
+        "Python",
+        "Scrum",
+        "Tester",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Billennium",
+     "url":"http://www.billennium.pl/",
+     "tags":[
+        "Frontend",
+        "Mobile",
+        "Tester"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Black Eye Games",
+     "url":"http://blackeyegames.com/",
+     "tags":[
+        "Tester"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Blueberry",
+     "url":"http://www.bb-group.pl/",
+     "tags":[
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Bottega IT Minds",
+     "url":"https://www.bottega.com.pl/",
+     "tags":[
+        "Architect"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Britenet",
+     "url":"http://britenet.com.pl/",
+     "tags":[
+        "Frontend",
+        "Java",
+        "JS"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"BUSINESS SURPLUS",
+     "url":"ttp://www.business-surplus.pl",
+     "tags":[
+        "C++",
+        "Mobile"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Capgemini",
+     "url":"https://www.capgemini.com/pl-pl/",
+     "tags":[
+        "Admin",
+        "C++",
+        "Architect"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Centralny Ośrodek Informatyki",
+     "url":"https://lwit.lublin.eu/firmy-lubelskiego-it/",
+     "tags":[
+        "Architect",
+        "Java",
+        "JS",
+        "Tester",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"CODEMA Software House",
+     "url":"https://codema.io/",
+     "tags":[
+        "Admin",
+        "Architect",
+        "JS",
+        "Mobile",
+        "PHP",
+        "Tester",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Codete",
+     "url":"http://www.codete.com/career",
+     "tags":[
+        "JS",
+        "Mobile",
+        "PHP"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Cognimetrica",
+     "url":"https://cognimetrica.com/",
+     "tags":[
+        "Architect",
+        "ML",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Comarch",
+     "url":"http://www.comarch.pl/",
+     "tags":[
+        "Admin",
+        "Database",
+        "Frontend",
+        "Designer",
+        "Architect",
+        "Java",
+        "JS",
+        "Mobile",
+        "PHP",
+        "Python",
+        "Scrum",
+        "Tester",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"CompuGroup Medical Polska",
+     "url":"https://www.cgm.com/pol_pl",
+     "tags":[
+        "Architect",
+        "Tester",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"CosmoEye",
+     "url":"https://www.cosmoeye.ai/",
+     "tags":[
+        "C++",
+        "Admin",
+        "PHP"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Damiko s.c.",
+     "url":"https://www.damiko.pl/",
+     "tags":[
+        "Admin",
+        "Admin",
+        "PHP"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Data Flow",
+     "url":"http://www.dtfl.pl/",
+     "tags":[
+        "JS",
+        "PHP",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"DataArt Poland",
+     "url":"http://www.dataart.com.pl/",
+     "tags":[
+        "Architect",
+        "JS",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Derave Software",
+     "url":"https://deravesoftware.com/",
+     "tags":[
+        "Architect",
+        "JS",
+        "PHP",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Devcomm ICT",
+     "url":"http://devcomm.pl/",
+     "tags":[
+        "JS",
+        "PHP",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Digit.on",
+     "url":"http://www.digiton.com.pl/",
+     "tags":[
+        
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Dogtronic",
+     "url":"https://dogtronic.io/",
+     "tags":[
+        "JS",
+        "Mobile",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"E-Studio Software",
+     "url":"http://estudio.com.pl/",
+     "tags":[
+        
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Edge One Solutions",
+     "url":"http://www.edge1s.com/",
+     "tags":[
+        "JS",
+        "Tester",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"eFactor",
+     "url":"http://efactor.pl/",
+     "tags":[
+        "Mobile",
+        "PHP"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"eLeader",
+     "url":"http://www.eleader.biz/",
+     "tags":[
+        
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"EMBIQ",
+     "url":"http://www.embiq.com/",
+     "tags":[
+        "C++",
+        "JS",
+        "Mobile",
+        "Python"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"emedia",
+     "url":"https://emedia.com.pl/",
+     "tags":[
+        "C++",
+        "Mobile",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Finanteq S.A.",
+     "url":"http://finanteq.com/",
+     "tags":[
+        "Architect",
+        "Mobile",
+        "Tester"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Freeline",
+     "url":"https://www.freeline.pl/",
+     "tags":[
+        "Designer",
+        "PHP",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Inetum Polska",
+     "url":"https://inetum.pl/pl/",
+     "tags":[
+        "JS",
+        "Tester",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"GIS-Expert",
+     "url":"http://www.gis-expert.pl/",
+     "tags":[
+        "Mobile",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"HSNet.pl",
+     "url":"https://lwit.lublin.eu/firmy-lubelskiego-it/",
+     "tags":[
+        "Designer",
+        "JS",
+        "PHP"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"IBIF",
+     "url":"https://www.ibif.pl/",
+     "tags":[
+        "Designer",
+        "JS",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"ICN Projekty IT",
+     "url":"http://www.icn.pl/",
+     "tags":[
+        "C++",
+        "JS",
+        "Tester"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Industi",
+     "url":"http://industi.com/",
+     "tags":[
+        "Admin",
+        "Designer",
+        "Architect",
+        "JS",
+        "Mobile",
+        "PHP",
+        "Tester",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Infinite",
+     "url":"http://infinite.pl/",
+     "tags":[
+        
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"InteliWISE",
+     "url":"http://inteliwise.pl/",
+     "tags":[
+        "JS",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"INTEN",
+     "url":"http://www.inten.pl/",
+     "tags":[
+        "Admin"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Intive",
+     "url":"https://www.intive.com/",
+     "tags":[
+        "JS",
+        "Mobile",
+        "Tester"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"IT.expert",
+     "url":"https://lwit.lublin.eu/firmy-lubelskiego-it/",
+     "tags":[
+        
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"ITligent Group",
+     "url":"http://www.itligent.pl/",
+     "tags":[
+        "C++",
+        "JS",
+        "PHP"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Uptime Development",
+     "url":"https://www.uptimedevelopment.pl/",
+     "tags":[
+        "Mobile",
+        "Tester",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Klif",
+     "url":"http://www.klif.com.pl/",
+     "tags":[
+        
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"KodoGrafia",
+     "url":"http://kodografia.pl/",
+     "tags":[
+        "Tester",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Kolorowe Projekty",
+     "url":"https://koloroweprojekty.pl/",
+     "tags":[
+        "Admin",
+        "Designer",
+        "JS",
+        "PHP",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"KONICA MINOLTA BUSINESS SOLUTIONS POLSKA",
+     "url":"http://www.konicaminolta.pl/",
+     "tags":[
+        "Architect",
+        "Admin"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Lingaro",
+     "url":"https://lingarogroup.com/lublin/",
+     "tags":[
+        "Admin",
+        "Architect",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"MIKROBIT",
+     "url":"http://www.mikrobit.pl/",
+     "tags":[
+        "Admin"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Milo Solutions",
+     "url":"https://milosolutions.com/",
+     "tags":[
+        "Mobile",
+        "Tester",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Mobica",
+     "url":"http://www.mobica.com/",
+     "tags":[
+        "Architect",
+        "Tester",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Mustang Marketing",
+     "url":"http://www.mustang-marketing.pl/",
+     "tags":[
+        "Designer",
+        "PHP",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Netkata",
+     "url":"http://www.netkata.com/",
+     "tags":[
+        
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Netrix SA",
+     "url":"http://sa.netrix.com.pl/",
+     "tags":[
+        "Admin",
+        "Mobile",
+        "Tester"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"News Hub Media",
+     "url":"https://www.newshubmedia.com/",
+     "tags":[
+        "Designer",
+        "Mobile",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Nocowanie.pl",
+     "url":"https://www.nocowanie.pl/",
+     "tags":[
+        "PHP",
+        "Tester"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Nurseum",
+     "url":"http://www.nurseum.pl/",
+     "tags":[
+        
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Onitum Software",
+     "url":"https://www.onitum.pl/",
+     "tags":[
+        "JS",
+        "Mobile",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Onwelo",
+     "url":"https://onwelo.com/",
+     "tags":[
+        "Architect",
+        "JS",
+        "Mobile"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"OPTeam",
+     "url":"http://www.opteam.pl/",
+     "tags":[
+        "Designer",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"POLMARK.net",
+     "url":"https://polmark.net/",
+     "tags":[
+        "Admin"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Polska Grupa IT",
+     "url":"http://polskagrupa.it/",
+     "tags":[
+        
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"PolSource S.A.",
+     "url":"http://www.polsource.com/",
+     "tags":[
+        "JS",
+        "Tester",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Predica",
+     "url":"https://www.predicagroup.com/",
+     "tags":[
+        "Architect",
+        "Mobile",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Proacta",
+     "url":"http://www.proacta.pl/",
+     "tags":[
+        "C++",
+        "JS",
+        "Tester"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Proama",
+     "url":"http://www.proama.pl/",
+     "tags":[
+        "Admin",
+        "Architect",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Pyramid Games",
+     "url":"https://pyramid.games/",
+     "tags":[
+        "Designer"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"R-SOFT STUDIO",
+     "url":"http://rsoftstudio.pl/",
+     "tags":[
+        "Mobile",
+        "PHP",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Rosiek Solutions",
+     "url":"https://rosieksolutions.pl/",
+     "tags":[
+        "Architect",
+        "Admin",
+        "Tester"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"rozwoj-oprogramowania.pl",
+     "url":"https://rozwoj-oprogramowania.pl/",
+     "tags":[
+        "Admin",
+        "PHP",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Sii",
+     "url":"http://www.sii.pl/",
+     "tags":[
+        
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Skuteczne media – Skuteczne media – wirtualne wsparcie biznesu",
+     "url":"https://liliannatrojanowska.pl/",
+     "tags":[
+        "Designer"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Smart Education International",
+     "url":"https://smarteducation.pl/",
+     "tags":[
+        "Admin",
+        "PHP",
+        "Tester"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Smart Ninja",
+     "url":"http://www.smartninja-lublin.pl/",
+     "tags":[
+        "C++",
+        "JS",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Softdeco",
+     "url":"http://www.softdeco.pl/",
+     "tags":[
+        "C++",
+        "JS",
+        "Mobile"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"SoftSystem",
+     "url":"http://www.softsystem.pl/",
+     "tags":[
+        
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Sollers Consulting",
+     "url":"https://sollers.eu/career/",
+     "tags":[
+        "C++",
+        "JS",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Solveris",
+     "url":"http://solveris.pl/",
+     "tags":[
+        "C++",
+        "Architect",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"SPARK-IT",
+     "url":"https://lwit.lublin.eu/firmy-lubelskiego-it/",
+     "tags":[
+        "Admin",
+        "Admin"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Spółka Inżynierów SIM",
+     "url":"http://www.sim.com.pl/",
+     "tags":[
+        
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Star Technology",
+     "url":"http://www.startechnology.pl/",
+     "tags":[
+        "Architect",
+        "PHP",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"startstop.pl",
+     "url":"http://startstop.pl/",
+     "tags":[
+        "JS",
+        "Mobile",
+        "Tester"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"TEAM International Poland",
+     "url":"https://www.teaminternational.com/",
+     "tags":[
+        "Mobile",
+        "Tester",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"telecomWORLD",
+     "url":"http://www.telecomworld.pl/",
+     "tags":[
+        "Tester"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Tesseract Dev",
+     "url":"http://www.tesseractdev.com/",
+     "tags":[
+        "C++",
+        "Architect",
+        "Tester"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Transition Technologies-Software",
+     "url":"http://www.ttsw.com.pl/",
+     "tags":[
+        "Frontend",
+        "Architect",
+        "Java",
+        "JS",
+        "Scrum",
+        "Tester"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Trimetis",
+     "url":"http://www.trimetis.eu/",
+     "tags":[
+        
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"UDTech",
+     "url":"https://udtech.pl/",
+     "tags":[
+        "C++",
+        "Architect",
+        "Admin"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Verestro SA",
+     "url":"https://verestro.com/kariera#oferty",
+     "tags":[
+        "JS",
+        "PHP"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"VADO",
+     "url":"http://www.vado.pl/",
+     "tags":[
+        "JS"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"VELVERO",
+     "url":"https://www.velvero.pl/",
+     "tags":[
+        "Admin",
+        "Admin",
+        "PHP"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"VentureDevs",
+     "url":"https://venturedevs.com/",
+     "tags":[
+        "JS",
+        "Mobile",
+        "Web"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"Zareklamy",
+     "url":"https://zareklamy.com/",
+     "tags":[
+        "Admin",
+        "Architect",
+        "PHP"
+     ],
+     "email":"",
+     "number":""
+  },
+  {
+     "name":"ZETO",
+     "url":"http://www.zeto.lublin.pl/",
+     "tags":[
+        
+     ],
+     "email":"",
+     "number":""
+  }
 ]

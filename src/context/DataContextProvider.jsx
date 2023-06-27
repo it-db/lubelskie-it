@@ -1,24 +1,20 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 
-const dataAddress = './companiesData.json'
+const dataAddress = './companiesData.json';
 export const DataContext = React.createContext();
 
 export const DataContextProvider = ({ children }) => {
-    const [data, setData] = useState();
-    const [isLoading, setIsLoading] = useState(true);
+  const [data, setData] = useState();
+  const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-        fetch(dataAddress)
-        .then(response => response.json())
-        .then(data => {
-            setData(data)
-            setIsLoading(false)
-        })
-    }, [])
-    
-    return (
-        <DataContext.Provider value={{ data, isLoading }}>
-        {children}
-        </DataContext.Provider>
-    );
-}
+  useEffect(() => {
+    fetch(dataAddress)
+      .then((response) => response.json())
+      .then((data) => {
+        setData(data);
+        setIsLoading(false);
+      });
+  }, []);
+
+  return <DataContext.Provider value={{ data, isLoading }}>{children}</DataContext.Provider>;
+};

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChange }) => {
+export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChange, onClick }) => {
   useEffect(() => {
     const storedStatus = localStorage.getItem(name);
     if (storedStatus && status !== storedStatus) {
@@ -30,16 +30,16 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
       <td className="my-3 flex w-auto flex-wrap items-center gap-2">
         {tags.map((tag, index) => {
           return (
-            <div key={index} className="rounded-lg  bg-gradient-to-r from-purple-600 to-violet-700 px-2 py-1 text-center text-sm font-semibold text-neutral-300">
+            <button key={index} onClick={() => onClick(tag.toLowerCase())} className="rounded-lg bg-gradient-to-r from-purple-600 to-violet-700 px-2 py-1 text-center text-sm font-semibold text-neutral-50 hover:from-purple-700 hover:to-violet-800">
               {tag}
-            </div>
+            </button>
           );
         })}
       </td>
 
       <td className="w-1/5">
-        <select defaultValue={status} onChange={handleStatusChange} className="text-md trunkate select -ml-4 w-full max-w-xs bg-neutral-900 font-semibold text-neutral-300">
-          <option disabled selected>
+        <select onChange={handleStatusChange} defaultValue="status" className="text-md trunkate select -ml-4 w-full max-w-xs bg-neutral-900 font-semibold text-neutral-300">
+          <option disabled value="status">
             Wybierz status
           </option>
           <option value="Wysłane CV">Wysłane CV</option>
