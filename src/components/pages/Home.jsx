@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { CompanyTableItem } from '../organisms/CompanyTableItem';
 import { useEffect } from 'react';
-import { companiesData } from '../../helpers/companiesData';
+// import { companiesData } from '../../helpers/companiesData';
 import GitHubButton from 'react-github-btn';
+import useData from '../../hooks/useData';
 
 export const Home = () => {
   const [selectedStatusFilter, setSelectedStatusFilter] = useState('');
@@ -28,7 +29,9 @@ export const Home = () => {
   useEffect(() => {
     localStorage.setItem('statuses', JSON.stringify(statuses));
   }, [statuses]);
-
+  console.log("before useData")
+  const {data, isLoading} = useData();
+  console.log(data, isLoading)
   return (
     <div className="h-auto min-h-screen bg-neutral-900 py-10">
       <div className="flex w-full flex-col items-center justify-center pb-10">
@@ -53,7 +56,7 @@ export const Home = () => {
             </div>
 
             <select className="text-md  select max-w-xs  bg-neutral-800/60 font-semibold text-neutral-400" onChange={(event) => setSelectedStatusFilter(event.target.value)}>
-              <option disabled selected>
+              <option disabled>
                 Status Rekrutacji
               </option>
               <option value="Wszystkie">Wszystkie</option>
@@ -77,13 +80,16 @@ export const Home = () => {
                 </tr>
               </thead>
               <tbody>
-                {companiesData.map((company) => {
+                {
+                isLoading ? <tr>Loading...</tr> :
+
+                data.map((company) => {
                   if (selectedStatusFilter && statuses[company.name] !== selectedStatusFilter && selectedStatusFilter !== 'Wszystkie') {
                     return null;
                   } else if (isCheckboxChecked && statuses[company.name] === undefined) {
                     return null;
                   }
-                  return <CompanyTableItem key={company.name} name={company.name} email={company.email} phone={company.phone} tags={company.tags} status={statuses[company.name]} onChange={handleStatusChange} />;
+                  return <CompanyTableItem key={company.name} name={company.name} email={company.url} phone={"000"} tags={company.tags} status={statuses[company.name]} onChange={handleStatusChange} />;
                 })}
               </tbody>
             </table>
