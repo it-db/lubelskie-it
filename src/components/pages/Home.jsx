@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { CompanyTableItem } from '../organisms/CompanyTableItem';
 import { useEffect } from 'react';
 import { companiesData } from '../../helpers/companiesData';
+import GitHubButton from 'react-github-btn';
 
 export const Home = () => {
   const [selectedStatusFilter, setSelectedStatusFilter] = useState('');
@@ -64,7 +65,6 @@ export const Home = () => {
               </thead>
               <tbody>
                 {companiesData.map((company) => {
-                  console.log(company.status, selectedStatusFilter);
                   if (selectedStatusFilter && statuses[company.name] !== selectedStatusFilter && selectedStatusFilter !== 'Wszystkie') {
                     return null;
                   }
@@ -72,12 +72,17 @@ export const Home = () => {
                 })}
               </tbody>
             </table>
+            <div className="mb-3 w-auto border-t  border-neutral-800/60 py-4 text-center font-semibold  text-neutral-200">Dane z dnia 28.07.2023</div>
           </div>
         </div>
       </div>
-      <div className="fixed bottom-0 mt-10 flex w-full flex-col items-center justify-center border-t-2 border-neutral-800/80  bg-neutral-900 py-4">
-        <div className="text-sm text-neutral-100 ">Dane z dnia 28.07.2023</div>
-        <div className="text-sm text-neutral-100 ">Pomogliśmy Ci w rekrutacji? Odwiedź GitHuba!</div>
+      <div className="fixed bottom-0 mt-10 flex w-full flex-col items-center justify-center border-t-2 border-neutral-800/80  bg-neutral-900 py-2">
+        <div className="mb-2 text-sm font-semibold text-neutral-300">Wesprzyj projekt na GitHubie!</div>
+        <div>
+          <GitHubButton href="https://github.com/it-db/lubelskie-it" className="" data-color-scheme="no-preference: dark-dimmed; light: dark-dimmed; dark: dark-dimmed;" data-size="medium" data-show-count="true" aria-label="Star it-db/lubelskie-it on GitHub">
+            Star
+          </GitHubButton>
+        </div>
       </div>
     </div>
   );
