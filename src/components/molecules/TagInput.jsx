@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const TagInput = ({ tags, setTags }) => {
-  const [placeholder, setPlaceholder] = useState('Szukaj firm wpisując nazwy technologii...');
+  const [placeholder, setPlaceholder] = useState('Używaj tagów i szukaj wsród ponad 100 firm!');
   const [input, setInput] = useState('');
 
   const onChange = (e) => {
@@ -14,7 +14,7 @@ const TagInput = ({ tags, setTags }) => {
     if (tags.length > 0) {
       setPlaceholder('');
     } else {
-      setPlaceholder('Szukaj firm wpisując nazwy technologii...');
+      setPlaceholder('Używaj tagów i szukaj wsród ponad 100 firm!');
     }
   };
 
@@ -50,9 +50,9 @@ const TagInput = ({ tags, setTags }) => {
   return (
     <div className="tagInput flex w-full  max-w-full items-center overflow-x-scroll rounded-lg bg-neutral-800 pl-2 text-black">
       {tags.map((tag, index) => (
-        <div key={index} className="ml-3  flex h-8 items-center justify-center  rounded-lg bg-gradient-to-r from-purple-600 to-violet-700 px-4 py-1 text-center text-sm font-semibold text-neutral-50">
+        <div key={index} className="ml-1 mr-1  flex h-8 items-center justify-center  rounded-lg bg-neutral-700/80 px-3 py-1 text-center text-sm font-semibold text-neutral-50">
           {tag}
-          <button onClick={() => deleteTag(index)} className=" text-md ml-3 cursor-pointer border-l-2  border-violet-400/50 bg-transparent  pl-4 text-xs text-neutral-50 transition hover:text-neutral-50">
+          <button onClick={() => deleteTag(index)} className=" text-md ml-3 cursor-pointer border-l-2  border-neutral-500/30 bg-transparent pl-3 text-xs text-neutral-200 transition hover:text-neutral-50">
             x
           </button>
         </div>

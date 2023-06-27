@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import GitHubButton from 'react-github-btn';
 import useData from '../../hooks/useData';
 import TagInput from '../molecules/TagInput';
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 const container = {
   visible: {
@@ -14,12 +14,12 @@ const container = {
       type: 'tween',
       duration: 0.5,
       staggerChildren: 0.1,
-    }
+    },
   },
   hidden: {
-    opacity: 1
-  }
-}
+    opacity: 1,
+  },
+};
 
 export const Home = () => {
   //select filtra
@@ -78,23 +78,19 @@ export const Home = () => {
     if (isLoading) {
       return;
     }
-    const newData = data.filter((company) => {
-      return !(selectedStatusFilter && statuses[company.name] !== selectedStatusFilter && selectedStatusFilter !== 'Wszystkie')
-    }
-    ).filter((company) => {
-      return !(tags.length > 0 && !company.tags.some((item) => tags.includes(item.toLowerCase())))
-    }
-    )
-    .filter((company) => {
-      return !(isCheckboxChecked && statuses[company.name] === undefined)
-    })
-    setFilteredData(newData)
-    setIsFiltered(true)
-    console.log("useEffect moving")
-  // }, [isCheckboxChecked])
-  }, [selectedStatusFilter, tags, isCheckboxChecked, isLoading])
-  
-
+    const newData = data
+      .filter((company) => {
+        return !(selectedStatusFilter && statuses[company.name] !== selectedStatusFilter && selectedStatusFilter !== 'Wszystkie');
+      })
+      .filter((company) => {
+        return !(tags.length > 0 && !company.tags.some((item) => tags.includes(item.toLowerCase())));
+      })
+      .filter((company) => {
+        return !(isCheckboxChecked && statuses[company.name] === undefined);
+      });
+    setFilteredData(newData);
+    setIsFiltered(true);
+  }, [selectedStatusFilter, tags, isCheckboxChecked, isLoading]);
 
   return (
     <div className="h-auto min-h-screen bg-neutral-900 py-10">
@@ -136,13 +132,12 @@ export const Home = () => {
             <table className="table ">
               <thead>
                 <tr className="border-neutral-800/60">
-                  <th className="text-neutral-500">Firma</th>
-                  <th className="text-neutral-500">Kontakt</th>
+                  <th className="w-1/5 text-neutral-500">Firma</th>
+                  <th className="w-1/5 text-neutral-500">Kontakt</th>
                   <th className="text-neutral-500">Tagi</th>
-                  <th className="text-neutral-500">Twój Status Rekrutacji</th>
+                  <th className="w-1/5 text-neutral-500">Twój Status Rekrutacji</th>
                 </tr>
               </thead>
-
 
               {isLoading && isFiltered ? (
                 <tr>Loading...</tr>
@@ -155,8 +150,8 @@ export const Home = () => {
                 >
                   {  
                     filteredData.map((company, i) => {
-                    return <CompanyTableItem id={i} key={i} onClick={handleTagClick} name={company.name} email={'fake@gmail.com'} url={company.url} phone={'532 328 213'} tags={company.tags} status={statuses[company.name]} onChange={handleStatusChange} />;
-                  })
+                      return <CompanyTableItem id={i} key={i} onClick={handleTagClick} name={company.name} email={'fake@gmail.com'} url={company.url} phone={'532 328 213'} tags={company.tags} status={statuses[company.name]} onChange={handleStatusChange} />;
+                    })
 
                     // data.map((company, i) => {
                     // if (selectedStatusFilter && statuses[company.name] !== selectedStatusFilter && selectedStatusFilter !== 'Wszystkie') {
@@ -169,22 +164,16 @@ export const Home = () => {
                     // return <CompanyTableItem id={i} key={i} onClick={handleTagClick} name={company.name} email={'fake@gmail.com'} url={company.url} phone={'532 328 213'} tags={company.tags} status={statuses[company.name]} onChange={handleStatusChange} />;
                     // })
                   }
-
                 </motion.tbody>
               )}
-
             </table>
-            {isLoading ? (
-                <></>
-              ) : (
-            <div className="mb-3 w-auto border-t  border-neutral-800/60 py-4 text-center font-semibold  text-neutral-200">Dane z dnia 28.07.2023</div>
-              )}
-            </div>
+            {isLoading ? <></> : <div className="mb-3 w-auto border-t  border-neutral-800/60 py-4 text-center font-semibold  text-neutral-200">Dane z dnia 28.07.2023</div>}
+          </div>
         </div>
       </div>
 
       <div className="fixed bottom-0 mt-10 flex w-full flex-col items-center justify-center border-t-2 border-neutral-800/80  bg-neutral-900 py-2">
-        <div className="mb-2 text-sm font-semibold text-neutral-300">Wesprzyj projekt na GitHubie!</div>
+        <div className="mb-2 text-sm font-semibold text-neutral-300">Wesprzyj rozbudowę projektu</div>
         <div>
           <GitHubButton href="https://github.com/it-db/lubelskie-it" className="" data-color-scheme="no-preference: dark-dimmed; light: dark-dimmed; dark: dark-dimmed;" data-size="medium" data-show-count="true" aria-label="Star it-db/lubelskie-it on GitHub">
             Star
