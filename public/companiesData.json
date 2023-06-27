@@ -47,17 +47,16 @@
       {
         "name": "ArchiDoc SA",
         "url": "http://www.archidoc.pl/",
-        "tags": [   "C++ Developer", "Tester", "Web" ]
+        "tags": [   "C++", "Tester", "Web" ]
       },
-      { "name": "Arcus SI", "url": "http://www.arcussi.pl/", "tags": [    ] },
+      { "name": "Arcus SI", "url": "http://www.arcussi.pl/", "tags": [".NET"] },
       {
         "name": "Asseco Business Solutions",
         "url": "https://kariera.assecobs.pl/",
         "tags": [
-           
           "Admin",
           "BD",
-          "Front",
+          "Frontend",
           "Designer",
           "Architect",
           "Java",
@@ -74,14 +73,14 @@
       {
         "name": "Billennium",
         "url": "http://www.billennium.pl/",
-        "tags": [   "Front", "Mobile", "Tester" ]
+        "tags": [   "Frontend", "Mobile", "Tester" ]
       },
       {
         "name": "Black Eye Games",
         "url": "http://blackeyegames.com/",
         "tags": [   "Tester" ]
       },
-      { "name": "Blueberry", "url": "http://www.bb-group.pl/", "tags": [    ] },
+      { "name": "Blueberry", "url": "http://www.bb-group.pl/", "tags": ["Web"] },
       {
         "name": "Bottega IT Minds",
         "url": "https://www.bottega.com.pl/",
@@ -92,7 +91,7 @@
         "url": "http://britenet.com.pl/",
         "tags": [
            
-          "Front",
+          "Frontend",
           "Java",
           "JS"
         ]
@@ -100,7 +99,7 @@
       {
         "name": "BUSINESS SURPLUS",
         "url": "ttp://www.business-surplus.pl",
-        "tags": [   "C++ Developer", "Mobile" ]
+        "tags": [   "C++", "Mobile" ]
       },
       {
         "name": "Capgemini",
@@ -108,7 +107,7 @@
         "tags": [
            
           "Admin",
-          "C++ Developer",
+          "C++",
           "Architect"
         ]
       },
@@ -154,7 +153,20 @@
           "Web"
         ]
       },
-      { "name": "Comarch", "url": "http://www.comarch.pl/", "tags": [    ] },
+      { "name": "Comarch", "url": "http://www.comarch.pl/", "tags": [         
+         "Admin",
+      "BD",
+      "Frontend",
+      "Designer",
+      "Architect",
+      "Java",
+      "JS",
+      "Mobile",
+      "PHP",
+      "Python",
+      "Scrum",
+      "Tester",
+      "Web"] },
       {
         "name": "CompuGroup Medical Polska",
         "url": "https://www.cgm.com/pol_pl",
@@ -170,7 +182,7 @@
         "url": "https://www.cosmoeye.ai/",
         "tags": [
            
-          "C++ Developer",
+          "C++",
           "Admin",
           "PHP"
         ]
@@ -247,7 +259,7 @@
         "url": "http://www.embiq.com/",
         "tags": [
            
-          "C++ Developer",
+          "C++",
           "JS",
           "Mobile",
           "Python"
@@ -256,7 +268,7 @@
       {
         "name": "emedia",
         "url": "https://emedia.com.pl/",
-        "tags": [   "C++ Developer", "Mobile", "Web" ]
+        "tags": [   "C++", "Mobile", "Web" ]
       },
       {
         "name": "Finanteq S.A.",
@@ -296,7 +308,7 @@
       {
         "name": "ICN Projekty IT",
         "url": "http://www.icn.pl/",
-        "tags": [   "C++ Developer", "JS", "Tester" ]
+        "tags": [   "C++", "JS", "Tester" ]
       },
       {
         "name": "Industi",
@@ -337,7 +349,7 @@
       {
         "name": "ITligent Group",
         "url": "http://www.itligent.pl/",
-        "tags": [   "C++ Developer", "JS", "PHP" ]
+        "tags": [   "C++", "JS", "PHP" ]
       },
       {
         "name": "Uptime Development",
@@ -480,7 +492,7 @@
       {
         "name": "Proacta",
         "url": "http://www.proacta.pl/",
-        "tags": [   "C++ Developer", "JS", "Tester" ]
+        "tags": [   "C++", "JS", "Tester" ]
       },
       {
         "name": "Proama",
@@ -536,25 +548,25 @@
       {
         "name": "Smart Ninja",
         "url": "http://www.smartninja-lublin.pl/",
-        "tags": [   "C++ Developer", "JS", "Web" ]
+        "tags": [   "C++", "JS", "Web" ]
       },
       {
         "name": "Softdeco",
         "url": "http://www.softdeco.pl/",
-        "tags": [   "C++ Developer", "JS", "Mobile" ]
+        "tags": [   "C++", "JS", "Mobile" ]
       },
       { "name": "SoftSystem", "url": "http://www.softsystem.pl/", "tags": [    ] },
       {
         "name": "Sollers Consulting",
         "url": "https://sollers.eu/career/",
-        "tags": [   "C++ Developer", "JS", "Web" ]
+        "tags": [   "C++", "JS", "Web" ]
       },
       {
         "name": "Solveris",
         "url": "http://solveris.pl/",
         "tags": [
            
-          "C++ Developer",
+          "C++",
           "Architect",
           "Web"
         ]
@@ -604,7 +616,7 @@
         "url": "http://www.tesseractdev.com/",
         "tags": [
            
-          "C++ Developer",
+          "C++",
           "Architect",
           "Tester"
         ]
@@ -614,7 +626,7 @@
         "url": "http://www.ttsw.com.pl/",
         "tags": [
            
-          "Front",
+          "Frontend",
           "Architect",
           "Java",
           "JS",
@@ -628,7 +640,7 @@
         "url": "https://udtech.pl/",
         "tags": [
            
-          "C++ Developer",
+          "C++",
           "Architect",
           "Admin"
         ]

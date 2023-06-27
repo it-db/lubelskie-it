@@ -50,7 +50,7 @@ export const Home = () => {
               <label className="label cursor-pointer">
                 <input type="checkbox" checked={isCheckboxChecked} onChange={handleCheckboxChange} className="checkbox-primary checkbox mr-4" />
                 <span onChange={handleCheckboxChange} className="label-text font-semibold text-neutral-300">
-                  Pokaż tylko firmy do których rekrutuje
+                  Pokaż tylko firmy do których rekrutujesz
                 </span>
               </label>
             </div>
