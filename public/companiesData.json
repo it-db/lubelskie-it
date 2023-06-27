@@ -2,7 +2,7 @@
     {
         "name": "2cW.pl",
         "url": "https://2cw.pl/",
-        "tags": [   "Graphic", "PHP", "Web" ]
+        "tags": [   "Designer", "PHP", "Web" ]
       },
       {
         "name": "300 DEVS",
@@ -10,7 +10,7 @@
         "tags": [
            
           "Admin",
-          "Graphic",
+          "Designer",
           "Architect",
           "JS",
           "Mobile",
@@ -22,12 +22,12 @@
       {
         "name": "9bits",
         "url": "http://www.9bits.com/",
-        "tags": [   "Graphic", "JS", "Web" ]
+        "tags": [   "Designer", "JS", "Web" ]
       },
       {
         "name": "Agencja Reklamowa Cumulus",
         "url": "http://agencjacumulus.pl/",
-        "tags": [   "Graphic", "Mobile", "Web" ]
+        "tags": [   "Designer", "Mobile", "Web" ]
       },
       {
         "name": "Akanza",
@@ -58,11 +58,10 @@
           "Admin",
           "BD",
           "Front",
-          "Graphic",
+          "Designer",
           "Architect",
           "Java",
           "JS",
-          "Admin",
           "ML",
           "Mobile",
           "PHP",
@@ -272,7 +271,7 @@
       {
         "name": "Freeline",
         "url": "https://www.freeline.pl/",
-        "tags": [   "Graphic", "PHP", "Web" ]
+        "tags": [   "Designer", "PHP", "Web" ]
       },
       {
         "name": "Inetum Polska",
@@ -287,12 +286,12 @@
       {
         "name": "HSNet.pl",
         "url": "https://lwit.lublin.eu/firmy-lubelskiego-it/",
-        "tags": [   "Graphic", "JS", "PHP" ]
+        "tags": [   "Designer", "JS", "PHP" ]
       },
       {
         "name": "IBIF",
         "url": "https://www.ibif.pl/",
-        "tags": [   "Graphic", "JS", "Web" ]
+        "tags": [   "Designer", "JS", "Web" ]
       },
       {
         "name": "ICN Projekty IT",
@@ -305,7 +304,7 @@
         "tags": [
            
           "Admin",
-          "Graphic",
+          "Designer",
           "Architect",
           "JS",
           "Mobile",
@@ -357,7 +356,7 @@
         "tags": [
            
           "Admin",
-          "Graphic",
+          "Designer",
           "JS",
           "PHP",
           "Web"
@@ -405,7 +404,7 @@
       {
         "name": "Mustang Marketing",
         "url": "http://www.mustang-marketing.pl/",
-        "tags": [   "Graphic", "PHP", "Web" ]
+        "tags": [   "Designer", "PHP", "Web" ]
       },
       { "name": "Netkata", "url": "http://www.netkata.com/", "tags": [    ] },
       {
@@ -421,7 +420,7 @@
       {
         "name": "News Hub Media",
         "url": "https://www.newshubmedia.com/",
-        "tags": [   "Graphic", "Mobile", "Web" ]
+        "tags": [   "Designer", "Mobile", "Web" ]
       },
       {
         "name": "Nocowanie.pl",
@@ -451,7 +450,7 @@
       {
         "name": "OPTeam",
         "url": "http://www.opteam.pl/",
-        "tags": [   "Graphic", "Web" ]
+        "tags": [   "Designer", "Web" ]
       },
       {
         "name": "POLMARK.net",
@@ -496,7 +495,7 @@
       {
         "name": "Pyramid Games",
         "url": "https://pyramid.games/",
-        "tags": [   "Graphic" ]
+        "tags": [   "Designer" ]
       },
       {
         "name": "R-SOFT STUDIO",
@@ -522,7 +521,7 @@
       {
         "name": "Skuteczne media – Skuteczne media – wirtualne wsparcie biznesu",
         "url": "https://liliannatrojanowska.pl/",
-        "tags": [   "Graphic" ]
+        "tags": [   "Designer" ]
       },
       {
         "name": "Smart Education International",
