@@ -1,53 +1,41 @@
 import {motion} from 'framer-motion';
 
-const AnimText = ({text, delay}) => {
-  
-  const container = {
-    hidden: {
-      opacity: 0,
-      // y: 20
-    },
-    visible: {
-      opacity: 1,
-      // y: 0,
-      transition: {
-        delay: 1,
-        // staggerChildren: 0.05,
-        delayChildren: delay,
-      },
-    },
-  };
+const AnimText = ({text, delay}) => {  
 
-  const child = {
-    hidden: {
-      opacity: 0,
-      y: 20,
-    },
+  const item = {
     visible: {
       opacity: 1,
-      y: 0,
-      transition: {
-        type: 'linear',
-        damping: 500,
-        stiffness: 5,
-      },
+      y: 0
     },
-  };
+    hidden: {
+      opacity: 0,
+      y: 10
+    },
+  }
   
   return (
-    <motion.div
-      variants={container}
-      initial="hidden"
-      animate="visible"
-    >
-      {text}
-      {/* <motion.span
-        className="text-neutral-300"
-        variants={child}
-      >
-        {text}
-      </motion.span>  */}
-    </motion.div>
+    <div className="mt-2 text-2xl font-semibold text-neutral-300">
+      {
+        text.split('').map((letter, index) => {
+          return (
+            <motion.span
+              key={index}
+              variants={item}
+              initial="hidden"
+              animate="visible"
+              transition={{
+                delay: delay + index * 0.01,
+                duration: 1,
+              }}
+            >
+              {letter}
+            </motion.span>
+          )
+        }
+        )
+      }
+
+    </div>
   )
 }
 
