@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { CompanyTableItem } from '../organisms/CompanyTableItem';
 import { useEffect } from 'react';
-// import { companiesData } from '../../helpers/companiesData';
 import GitHubButton from 'react-github-btn';
 import useData from '../../hooks/useData';
 import TagInput from '../molecules/TagInput';
