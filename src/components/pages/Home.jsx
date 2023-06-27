@@ -6,6 +6,7 @@ import GitHubButton from 'react-github-btn';
 
 export const Home = () => {
   const [selectedStatusFilter, setSelectedStatusFilter] = useState('');
+  const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
 
   const [statuses, setStatuses] = useState(() => {
     const storedStatuses = localStorage.getItem('statuses');
@@ -18,6 +19,10 @@ export const Home = () => {
       ...prevStatuses,
       [name]: newStatus,
     }));
+  };
+
+  const handleCheckboxChange = () => {
+    setIsCheckboxChecked(!isCheckboxChecked);
   };
 
   useEffect(() => {
@@ -37,13 +42,21 @@ export const Home = () => {
             <button className="text-md btn h-14 w-28 bg-neutral-800/60 font-bold text-neutral-50 transition duration-150 ease-linear hover:bg-violet-700 ">Szukaj</button>
           </div>
 
-          <div className="mt-10 flex justify-end lg:w-full">
+          <div className="mt-10 flex justify-between lg:w-full">
+            <div className="form-control">
+              <label className="label cursor-pointer">
+                <input type="checkbox" checked={isCheckboxChecked} onChange={handleCheckboxChange} className="checkbox-primary checkbox mr-4" />
+                <span onChange={handleCheckboxChange} className="label-text font-semibold text-neutral-300">
+                  Pokaż tylko firmy do których rekrutuje
+                </span>
+              </label>
+            </div>
+
             <select className="text-md  select max-w-xs  bg-neutral-800/60 font-semibold text-neutral-400" onChange={(event) => setSelectedStatusFilter(event.target.value)}>
               <option disabled selected>
                 Status Rekrutacji
               </option>
               <option value="Wszystkie">Wszystkie</option>
-              <option value="Brak">Brak</option>
               <option value="Wysłane CV">Wysłane CV</option>
               <option value="Zaplanowana rozmowa">Zaplanowana rozmowa</option>
               <option value="Po rozmowie">Po rozmowie</option>
@@ -66,6 +79,8 @@ export const Home = () => {
               <tbody>
                 {companiesData.map((company) => {
                   if (selectedStatusFilter && statuses[company.name] !== selectedStatusFilter && selectedStatusFilter !== 'Wszystkie') {
+                    return null;
+                  } else if (isCheckboxChecked && statuses[company.name] === undefined) {
                     return null;
                   }
                   return <CompanyTableItem key={company.name} name={company.name} email={company.email} phone={company.phone} tags={company.tags} status={statuses[company.name]} onChange={handleStatusChange} />;

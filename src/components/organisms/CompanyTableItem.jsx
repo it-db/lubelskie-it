@@ -41,7 +41,6 @@ export const CompanyTableItem = ({ name, email, phone, tags, status, onChange })
           <option disabled selected>
             Wybierz status
           </option>
-          <option value="Brak">Brak</option>
           <option value="Wysłane CV">Wysłane CV</option>
           <option value="Zaplanowana rozmowa">Zaplanowana rozmowa</option>
           <option value="Po rozmowie">Po rozmowie</option>
