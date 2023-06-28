@@ -149,7 +149,7 @@ export const Home = () => {
               ) : (
                 <motion.tbody variants={container} initial="hidden" animate="visible" key={filteredData}>
                   {filteredData.map((company, i) => {
-                    return <CompanyTableItem id={i} key={i} onClick={handleTagClick} name={company.name} email={'fake@gmail.com'} url={company.url} phone={'532 328 213'} tags={company.tags} status={statuses[company.name]} onChange={handleStatusChange} c />;
+                    return <CompanyTableItem id={i} key={i} onClick={handleTagClick} name={company.name} email={company.email} url={company.url} phone={company.number} tags={company.tags} status={statuses[company.name]} onChange={handleStatusChange} c />;
                   })}
                 </motion.tbody>
               )}
