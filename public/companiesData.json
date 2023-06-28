@@ -224,10 +224,12 @@
      "tags":[
         "JS",
         "Mobile",
-        "PHP"
+        "PHP", 
+        "C++",
+        "Database"
      ],
-     "email":"",
-     "number":""
+     "email":"mail@codete.com",
+     "number":"531 571 941"
   },
   {
      "name":"Cognimetrica",
@@ -237,7 +239,7 @@
         "ML",
         "Web"
      ],
-     "email":"",
+     "email":"info@cognimetrica.com ",
      "number":""
   },
   {
@@ -258,8 +260,8 @@
         "Tester",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"info@comarch.pl",
+     "number":"126 461 000"
   },
   {
      "name":"CompuGroup Medical Polska",
@@ -267,9 +269,11 @@
      "tags":[
         "Architect",
         "Tester",
-        "Web"
+        "Java",
+        "Admin",
+        "Database"
      ],
-     "email":"",
+     "email":"Forumularz Kontaktowy",
      "number":""
   },
   {
@@ -280,19 +284,18 @@
         "Admin",
         "PHP"
      ],
-     "email":"",
-     "number":""
+     "email":"nataly.zubowicz@cosmoeye.ai",
+     "number":"881 700 871"
   },
   {
      "name":"Damiko",
-     "url":"https://www.damiko.pl/",
+     "url":"https://grupa.damiko.pl",
      "tags":[
-        "Admin",
         "Admin",
         "PHP"
      ],
-     "email":"",
-     "number":""
+     "email":"damiko@damiko.pl",
+     "number":"814 635 466"
   },
   {
      "name":"Data Flow",
@@ -302,8 +305,8 @@
         "PHP",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"info@dtfl.pl",
+     "number":"814 775 915 /"
   },
   {
      "name":"DataArt Poland",
@@ -311,10 +314,17 @@
      "tags":[
         "Architect",
         "JS",
-        "Web"
+        "Web",
+        "Java",
+        "C++",
+        "Mobile",
+        "Frontend",
+        "Salesforce",
+        "Designer",
+        "Tester"
      ],
-     "email":"",
-     "number":""
+     "email":"Forumularz Kontaktowy",
+     "number":"814 546 170"
   },
   {
      "name":"Derave Software",
@@ -325,8 +335,8 @@
         "PHP",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"contact@deravesoftware.com",
+     "number":"731 277 087"
   },
   {
      "name":"Devcomm ICT",
@@ -336,17 +346,17 @@
         "PHP",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"info@devcomm.pl",
+     "number":"815 657 700 "
   },
   {
      "name":"Digit.on",
      "url":"http://www.digiton.com.pl/",
      "tags":[
-        
+        "Embedded"
      ],
-     "email":"",
-     "number":""
+     "email":"biuro@digiton.com.pl",
+     "number":"222 440 744"
   },
   {
      "name":"Dogtronic",
@@ -356,17 +366,17 @@
         "Mobile",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"marek.golan@dogtronic.io",
+     "number":"883 961 651"
   },
   {
      "name":"E-Studio Software",
-     "url":"http://estudio.com.pl/",
+     "url":"",
      "tags":[
-        
+        "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"poczta@estudio.com.pl",
+     "number":"814 440 990"
   },
   {
      "name":"Edge One Solutions",
@@ -376,27 +386,27 @@
         "Tester",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"biuro@edge1s.com",
+     "number":" 605 158 222"
   },
   {
      "name":"eFactor",
-     "url":"http://efactor.pl/",
+     "url":"https://efaktor.com.pl/",
      "tags":[
         "Mobile",
         "PHP"
      ],
-     "email":"",
-     "number":""
+     "email":"sekretariat@efaktor.com.pl",
+     "number":" 222 034 166"
   },
   {
      "name":"eLeader",
      "url":"http://www.eleader.biz/",
      "tags":[
-        
+        "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"info@eleader.pl",
+     "number":"815 369 690"
   },
   {
      "name":"EMBIQ",
@@ -407,8 +417,8 @@
         "Mobile",
         "Python"
      ],
-     "email":"",
-     "number":""
+     "email":"Forumularz Kontaktowy",
+     "number":"815 618 501"
   },
   {
      "name":"emedia",
@@ -418,8 +428,8 @@
         "Mobile",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"kontakt@emedia.pl",
+     "number":"790 420 150"
   },
   {
      "name":"Finanteq",
@@ -623,7 +633,7 @@
      "number":"504 407 905"
   },
   {
-     "name":"KONICA MINOLTA BUSINESS SOLUTIONS POLSKA",
+     "name":"KONICA MINOLTA",
      "url":"http://www.konicaminolta.pl/",
      "tags":[
         "Architect",
@@ -869,7 +879,7 @@
      "number":"814 546 888"
   },
   {
-     "name":"Skuteczne media – Skuteczne media – wirtualne wsparcie biznesu",
+     "name":"Liliana Trojanowska",
      "url":"https://liliannatrojanowska.pl/",
      "tags":[
         "Designer"
@@ -1085,7 +1095,7 @@
      "name":"ZETO",
      "url":"http://www.zeto.lublin.pl/",
      "tags":[
-        
+        "Security"
      ],
      "email":"info@zeto.lublin.pl",
      "number":"817184200"
