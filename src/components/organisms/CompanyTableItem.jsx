@@ -6,10 +6,6 @@ const list = {
   visible: {
     opacity: 1,
     y: 0,
-    // transition: {
-    // type: 'tween',
-    // duration: 0.5,
-    // }
   },
   hidden: {
     opacity: 0,
@@ -33,11 +29,10 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
 
   return (
     <motion.tr
-      className="border-neutral-800/60"
+      className="border-neutral-800/60 hover:bg-neutral-800/10"
       variants={list}
       initial="hidden"
       animate="visible"
-      whileHover={{ scale: 1.02 }}
       transition={{
         delay: (0.05 * id) % 0.7,
         type: 'tween',
@@ -63,7 +58,7 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
       <td className="my-3 flex w-auto flex-wrap items-center gap-2">
         {tags.map((tag, index) => {
           return (
-            <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} key={index} onClick={() => onClick(tag.toLowerCase())} className="rounded-lg bg-gradient-to-r from-purple-600 to-violet-700 px-2 py-1 text-center text-sm font-semibold text-neutral-50 hover:from-purple-700 hover:to-violet-800">
+            <motion.button whileHover={{ scale: 1 }} whileTap={{ scale: 0.9 }} key={index} onClick={() => onClick(tag.toLowerCase())} className="rounded-lg bg-gradient-to-r from-purple-600 to-violet-700 px-2 py-1 text-center text-sm font-semibold text-neutral-50 hover:from-purple-700 hover:to-violet-800">
               {tag}
             </motion.button>
           );
@@ -71,8 +66,9 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
       </td>
 
       <td className="w-1/5">
-        <select onChange={handleStatusChange} value={status} className="text-md trunkate select -ml-4 w-full max-w-xs bg-neutral-900 font-semibold text-neutral-300">
-          <option value="status2">Wybierz status</option>
+        <select onChange={handleStatusChange} value={status} className="text-md trunkate select -ml-4 w-full max-w-xs bg-transparent font-semibold text-neutral-300">
+          <option value="notdefined">Wybierz status</option>
+          <option value="Interesująca">Interesująca</option>
           <option value="Wysłane CV">Wysłane CV</option>
           <option value="Zaplanowana rozmowa">Zaplanowana rozmowa</option>
           <option value="Po rozmowie">Po rozmowie</option>

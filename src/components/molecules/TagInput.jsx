@@ -50,14 +50,14 @@ const TagInput = ({ tags, setTags }) => {
   return (
     <div className="tagInput flex w-full  max-w-full items-center overflow-x-scroll rounded-lg bg-neutral-800 pl-2 text-black">
       {tags.map((tag, index) => (
-        <div key={index} className="ml-1 mr-1  flex h-8 items-center justify-center  rounded-lg bg-neutral-700/80 pl-3 py-1 text-center text-sm font-semibold text-neutral-50">
+        <div key={index} className="ml-1 mr-1  flex h-8 items-center justify-center  rounded-lg bg-neutral-700/80 py-1 pl-3 text-center text-sm font-semibold text-neutral-50">
           {tag}
           <button onClick={() => deleteTag(index)} className=" text-md ml-3 cursor-pointer border-l-2  border-neutral-500/30 bg-transparent pl-3 pr-3 text-xs text-neutral-200 transition hover:text-neutral-50">
             x
           </button>
         </div>
       ))}
-      <input value={input} onKeyDown={onKeyDown} onChange={onChange} type="text" placeholder={placeholder} className="input h-14 w-full bg-neutral-800 text-lg font-semibold text-neutral-300 placeholder:font-semibold placeholder:text-neutral-500  focus:outline-none " />
+      <input value={input} onKeyDown={onKeyDown} onChange={onChange} type="text" placeholder={placeholder} className="placeholder:font-sembold input h-14 w-full bg-neutral-800 text-lg font-semibold text-neutral-300  placeholder:text-neutral-600  focus:outline-none " />
     </div>
   );
 };
