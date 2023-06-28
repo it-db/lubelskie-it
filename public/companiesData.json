@@ -7,8 +7,8 @@
         "PHP",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"biuro@2cw.pl",
+     "number":"81 440 59 99"
   },
   {
      "name":"300 DEVS",
@@ -23,8 +23,8 @@
         "Tester",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"me@300devs.com",
+     "number":"696 904 213"
   },
   {
      "name":"9bits",
@@ -34,7 +34,7 @@
         "JS",
         "Web"
      ],
-     "email":"",
+     "email":"contact@9bits.com",
      "number":""
   },
   {
@@ -45,8 +45,8 @@
         "Mobile",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"praca@agencjacumulus.pl",
+     "number":"81 53 445 44"
   },
   {
      "name":"Akanza",
@@ -56,8 +56,8 @@
         "PHP",
         "Python"
      ],
-     "email":"",
-     "number":""
+     "email":"info@akanza.pl",
+     "number":"81 470 71 88"
   },
   {
      "name":"Altkom Software & Consulting",
@@ -65,7 +65,7 @@
      "tags":[
         "Architect"
      ],
-     "email":"",
+     "email":"formularz",
      "number":""
   },
   {
@@ -75,18 +75,18 @@
         "JS",
         "Web"
      ],
-     "email":"",
+     "email":"formularz",
      "number":""
   },
   {
-     "name":"ArchiDoc SA",
+     "name":"ArchiDoc",
      "url":"http://www.archidoc.pl/",
      "tags":[
         "C++",
         "Tester",
         "Web"
      ],
-     "email":"",
+     "email":"formularz",
      "number":""
   },
   {
@@ -95,8 +95,8 @@
      "tags":[
         ".NET"
      ],
-     "email":"",
-     "number":""
+     "email":"praca@arcussi.pl",
+     "number":"500 207 161"
   },
   {
      "name":"Asseco Business Solutions",
@@ -117,7 +117,7 @@
         "Tester",
         "Web"
      ],
-     "email":"",
+     "email":"formularz",
      "number":""
   },
   {
@@ -128,8 +128,8 @@
         "Mobile",
         "Tester"
      ],
-     "email":"",
-     "number":""
+     "email":"info@billennium.com",
+     "number":"22 844 15 00"
   },
   {
      "name":"Black Eye Games",
@@ -137,7 +137,7 @@
      "tags":[
         "Tester"
      ],
-     "email":"",
+     "email":"formularz",
      "number":""
   },
   {
@@ -146,8 +146,8 @@
      "tags":[
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"kontakt@awcg.pl",
+     "number":"881 009 555"
   },
   {
      "name":"Bottega IT Minds",
@@ -155,8 +155,8 @@
      "tags":[
         "Architect"
      ],
-     "email":"",
-     "number":""
+     "email":"contact@bottega.com.pl",
+     "number":"81 473 29 44"
   },
   {
      "name":"Britenet",
@@ -166,18 +166,18 @@
         "Java",
         "JS"
      ],
-     "email":"",
-     "number":""
+     "email":"office@britenet.eu",
+     "number":"22 111 00 30"
   },
   {
      "name":"BUSINESS SURPLUS",
-     "url":"ttp://www.business-surplus.pl",
+     "url":"http://www.business-surplus.pl",
      "tags":[
         "C++",
         "Mobile"
      ],
-     "email":"",
-     "number":""
+     "email":"info@business-surplus.pl",
+     "number":"81 464 00 89"
   },
   {
      "name":"Capgemini",
@@ -187,12 +187,12 @@
         "C++",
         "Architect"
      ],
-     "email":"",
+     "email":"komunikacja.pl@capgemini.com",
      "number":""
   },
   {
      "name":"Centralny Ośrodek Informatyki",
-     "url":"https://lwit.lublin.eu/firmy-lubelskiego-it/",
+     "url":"https://www.coi.gov.pl/",
      "tags":[
         "Architect",
         "Java",
@@ -200,7 +200,7 @@
         "Tester",
         "Web"
      ],
-     "email":"",
+     "email":"formularz",
      "number":""
   },
   {
@@ -215,8 +215,8 @@
         "Tester",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"info@codema.io",
+     "number":"690 398 461"
   },
   {
      "name":"Codete",
@@ -284,7 +284,7 @@
      "number":""
   },
   {
-     "name":"Damiko s.c.",
+     "name":"Damiko",
      "url":"https://www.damiko.pl/",
      "tags":[
         "Admin",
@@ -422,14 +422,14 @@
      "number":""
   },
   {
-     "name":"Finanteq S.A.",
+     "name":"Finanteq",
      "url":"http://finanteq.com/",
      "tags":[
         "Architect",
         "Mobile",
         "Tester"
      ],
-     "email":"",
+     "email":"Forumularz Kontaktowy",
      "number":""
   },
   {
@@ -440,8 +440,8 @@
         "PHP",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"biuro@freeline.pl",
+     "number":"660 796 695"
   },
   {
      "name":"Inetum Polska",
@@ -451,8 +451,8 @@
         "Tester",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"Forumularz Kontaktowy",
+     "number":"612 229 025"
   },
   {
      "name":"GIS-Expert",
@@ -461,8 +461,8 @@
         "Mobile",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"info@gis-expert.pl",
+     "number":"600 466 536"
   },
   {
      "name":"HSNet.pl",
@@ -472,8 +472,8 @@
         "JS",
         "PHP"
      ],
-     "email":"",
-     "number":""
+     "email":"office@hsnet.pl",
+     "number":"814 405 999"
   },
   {
      "name":"IBIF",
@@ -483,8 +483,8 @@
         "JS",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"biuro@ibif.pl",
+     "number":"505 551 616"
   },
   {
      "name":"ICN Projekty IT",
@@ -494,8 +494,8 @@
         "JS",
         "Tester"
      ],
-     "email":"",
-     "number":""
+     "email":"kontakt@icn.pl",
+     "number":"602 158 210"
   },
   {
      "name":"Industi",
@@ -510,17 +510,21 @@
         "Tester",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"kontakt@industi.com",
+     "number":"814 634 488"
   },
   {
      "name":"Infinite",
      "url":"http://infinite.pl/",
      "tags":[
-        
+        "JS",
+        "Frontend",
+        "Java",
+        "Admin",
+        "Database"
      ],
-     "email":"",
-     "number":""
+     "email":"info@infinite.pl",
+     "number":" 817 451 750"
   },
   {
      "name":"InteliWISE",
@@ -529,8 +533,8 @@
         "JS",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"Forumularz Kontaktowy",
+     "number":"22 765 6000"
   },
   {
      "name":"INTEN",
@@ -538,59 +542,62 @@
      "tags":[
         "Admin"
      ],
-     "email":"",
-     "number":""
+     "email":"finanse@inten.pl",
+     "number":"815 340 330"
   },
   {
      "name":"Intive",
-     "url":"https://www.intive.com/",
+     "url":"https://intive.com/pl/careers",
      "tags":[
         "JS",
         "Mobile",
-        "Tester"
+        "Tester",
+        ".NET",
+        "Designer",
+        "Scrum",
+        "Architect"
      ],
-     "email":"",
+     "email":"Forumularz Kontaktowy",
      "number":""
   },
   {
      "name":"IT.expert",
-     "url":"https://lwit.lublin.eu/firmy-lubelskiego-it/",
+     "url":"http://itexpert.net.pl",
      "tags":[
-        
+        "Embedded"
      ],
-     "email":"",
-     "number":""
+     "email":"biuro@itexpert.net.pl ",
+     "number":" 146 926 294"
   },
   {
      "name":"ITligent Group",
-     "url":"http://www.itligent.pl/",
+     "url":"http://site.profiles.itligent.pl/",
      "tags":[
         "C++",
-        "JS",
-        "PHP"
+        "PHP",
+        "Mobile"
      ],
-     "email":"",
-     "number":""
+     "email":"biuro@itligent.pl",
+     "number":"605 990 920"
   },
   {
      "name":"Uptime Development",
      "url":"https://www.uptimedevelopment.pl/",
      "tags":[
-        "Mobile",
-        "Tester",
-        "Web"
+        ".NET",
+        "Java"
      ],
-     "email":"",
-     "number":""
+     "email":"info@uptimedevelopment.pl",
+     "number":" 502 714 161"
   },
   {
      "name":"Klif",
      "url":"http://www.klif.com.pl/",
      "tags":[
-        
+        "Embedded"
      ],
-     "email":"",
-     "number":""
+     "email":"klif@klif.com.pl",
+     "number":"817 105 271"
   },
   {
      "name":"KodoGrafia",
@@ -599,8 +606,8 @@
         "Tester",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"info@kodografia.pl",
+     "number":"508 906 053"
   },
   {
      "name":"Kolorowe Projekty",
@@ -612,8 +619,8 @@
         "PHP",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"kontakt@koloroweprojekty.pl",
+     "number":"504 407 905"
   },
   {
      "name":"KONICA MINOLTA BUSINESS SOLUTIONS POLSKA",
@@ -622,7 +629,7 @@
         "Architect",
         "Admin"
      ],
-     "email":"",
+     "email":"Forumularz Kontaktowy",
      "number":""
   },
   {
@@ -633,8 +640,8 @@
         "Architect",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"contact@lingarogroup.com",
+     "number":"228 253 025"
   },
   {
      "name":"MIKROBIT",
@@ -642,8 +649,8 @@
      "tags":[
         "Admin"
      ],
-     "email":"",
-     "number":""
+     "email":"BOK@mikrobit.pl",
+     "number":"815 280 351"
   },
   {
      "name":"Milo Solutions",
@@ -653,8 +660,8 @@
         "Tester",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"604 131 027",
+     "number":"Forumularz Kontaktowy"
   },
   {
      "name":"Mobica",
@@ -664,8 +671,8 @@
         "Tester",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"hr@mobica.com",
+     "number":"Forumularz Kontaktowy"
   },
   {
      "name":"Mustang Marketing",
@@ -675,8 +682,8 @@
         "PHP",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"biuro@mustang-marketing.pl",
+     "number":"507-972-278"
   },
   {
      "name":"Netkata",
@@ -684,29 +691,30 @@
      "tags":[
         
      ],
-     "email":"",
+     "email":"Forumularz Kontaktowy",
      "number":""
   },
   {
-     "name":"Netrix SA",
+     "name":"Netrix",
      "url":"http://sa.netrix.com.pl/",
      "tags":[
         "Admin",
         "Mobile",
         "Tester"
      ],
-     "email":"",
-     "number":""
+     "email":"biuro@netrix.com.pl",
+     "number":"817 480 834"
   },
   {
      "name":"News Hub Media",
      "url":"https://www.newshubmedia.com/",
      "tags":[
         "Designer",
-        "Mobile",
-        "Web"
+        "Web",
+        "JS",
+        "Tester"
      ],
-     "email":"",
+     "email":"contact@newshubmedia.com",
      "number":""
   },
   {
@@ -714,30 +722,13 @@
      "url":"https://www.nocowanie.pl/",
      "tags":[
         "PHP",
-        "Tester"
+        "Tester",
+        "Scrum",
+        "Designer",
+        "Frontend"
      ],
-     "email":"",
-     "number":""
-  },
-  {
-     "name":"Nurseum",
-     "url":"http://www.nurseum.pl/",
-     "tags":[
-        
-     ],
-     "email":"",
-     "number":""
-  },
-  {
-     "name":"Onitum Software",
-     "url":"https://www.onitum.pl/",
-     "tags":[
-        "JS",
-        "Mobile",
-        "Web"
-     ],
-     "email":"",
-     "number":""
+     "email":"praca@nocowanie.pl",
+     "number":"880 286 910"
   },
   {
      "name":"Onwelo",
@@ -747,18 +738,18 @@
         "JS",
         "Mobile"
      ],
-     "email":"",
-     "number":""
+     "email":"lublin@onwelo.com",
+     "number":"Forumularz Kontaktowy"
   },
   {
      "name":"OPTeam",
      "url":"http://www.opteam.pl/",
      "tags":[
-        "Designer",
-        "Web"
+        "Web",
+        "Admin"
      ],
-     "email":"",
-     "number":""
+     "email":"opteam@opteam.pl",
+     "number":"178 672 100"
   },
   {
      "name":"POLMARK.net",
@@ -766,8 +757,8 @@
      "tags":[
         "Admin"
      ],
-     "email":"",
-     "number":""
+     "email":"biuro@polmark.net",
+     "number":"813 076 088"
   },
   {
      "name":"Polska Grupa IT",
@@ -775,18 +766,19 @@
      "tags":[
         
      ],
-     "email":"",
-     "number":""
+     "email":"226 604 800",
+     "number":"biuro@polskagrupa.it"
   },
   {
-     "name":"PolSource S.A.",
+     "name":"PolSource",
      "url":"http://www.polsource.com/",
      "tags":[
         "JS",
         "Tester",
-        "Web"
+        "Web",
+        "Salesforce"
      ],
-     "email":"",
+     "email":"Forumularz Kontaktowy",
      "number":""
   },
   {
@@ -797,7 +789,7 @@
         "Mobile",
         "Web"
      ],
-     "email":"",
+     "email":"Forumularz Kontaktowy",
      "number":""
   },
   {
@@ -808,19 +800,8 @@
         "JS",
         "Tester"
      ],
-     "email":"",
-     "number":""
-  },
-  {
-     "name":"Proama",
-     "url":"http://www.proama.pl/",
-     "tags":[
-        "Admin",
-        "Architect",
-        "Web"
-     ],
-     "email":"",
-     "number":""
+     "email":"info@proacta.pl",
+     "number":"226 997 132"
   },
   {
      "name":"Pyramid Games",
@@ -828,8 +809,8 @@
      "tags":[
         "Designer"
      ],
-     "email":"",
-     "number":""
+     "email":"contact@pyramid.games",
+     "number":"Forumularz Kontaktowy"
   },
   {
      "name":"R-SOFT STUDIO",
@@ -837,10 +818,11 @@
      "tags":[
         "Mobile",
         "PHP",
-        "Web"
+        "Web",
+        "Słabe opinie"
      ],
-     "email":"",
-     "number":""
+     "email":"kontakt@rsoftstudio.pl",
+     "number":"664 086 672"
   },
   {
      "name":"Rosiek Solutions",
@@ -850,8 +832,8 @@
         "Admin",
         "Tester"
      ],
-     "email":"",
-     "number":""
+     "email":"kontakt@rosieksolutions.pl ",
+     "number":"508 292 919"
   },
   {
      "name":"rozwoj-oprogramowania.pl",
@@ -861,17 +843,30 @@
         "PHP",
         "Web"
      ],
-     "email":"",
+     "email":"Forumularz Kontaktowy",
      "number":""
   },
   {
      "name":"Sii",
      "url":"http://www.sii.pl/",
      "tags":[
-        
+      "Admin",
+      "Database",
+      "Frontend",
+      "Designer",
+      "Architect",
+      "Java",
+      "JS",
+      "ML",
+      "Mobile",
+      "PHP",
+      "Python",
+      "Scrum",
+      "Tester",
+      "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"Forumularz Kontaktowy",
+     "number":"814 546 888"
   },
   {
      "name":"Skuteczne media – Skuteczne media – wirtualne wsparcie biznesu",
@@ -879,8 +874,8 @@
      "tags":[
         "Designer"
      ],
-     "email":"",
-     "number":""
+     "email":"kontakt@liliannatrojanowska.pl",
+     "number":"737 333 805"
   },
   {
      "name":"Smart Education International",
@@ -890,30 +885,17 @@
         "PHP",
         "Tester"
      ],
-     "email":"",
-     "number":""
-  },
-  {
-     "name":"Smart Ninja",
-     "url":"http://www.smartninja-lublin.pl/",
-     "tags":[
-        "C++",
-        "JS",
-        "Web"
-     ],
-     "email":"",
-     "number":""
+     "email":"info@smarteducation.pl",
+     "number":"228 542 060"
   },
   {
      "name":"Softdeco",
      "url":"http://www.softdeco.pl/",
      "tags":[
-        "C++",
-        "JS",
-        "Mobile"
+        "PHP"
      ],
-     "email":"",
-     "number":""
+     "email":"Forumularz Kontaktowy",
+     "number":"667 680 680"
   },
   {
      "name":"SoftSystem",
@@ -921,8 +903,8 @@
      "tags":[
         
      ],
-     "email":"",
-     "number":""
+     "email":"office@softsystem.pl",
+     "number":"178 751 300"
   },
   {
      "name":"Sollers Consulting",
@@ -932,8 +914,8 @@
         "JS",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"contact@sollers.eu",
+     "number":"814 603 250"
   },
   {
      "name":"Solveris",
@@ -943,27 +925,29 @@
         "Architect",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"info@solveris.pl",
+     "number":"814 634 632"
   },
   {
      "name":"SPARK-IT",
-     "url":"https://lwit.lublin.eu/firmy-lubelskiego-it/",
+     "url":"https://www.spark-it.pl/",
      "tags":[
-        "Admin",
         "Admin"
      ],
-     "email":"",
-     "number":""
+     "email":"Forumularz Kontaktowy",
+     "number":"733 900 135"
   },
   {
      "name":"Spółka Inżynierów SIM",
      "url":"http://www.sim.com.pl/",
      "tags":[
-        
+        "Embedded",
+        "Database",
+        ".NET",
+        "Architect"
      ],
-     "email":"",
-     "number":""
+     "email":"sim@sim.com.pl",
+     "number":" 817 187 850"
   },
   {
      "name":"Star Technology",
@@ -973,8 +957,8 @@
         "PHP",
         "Web"
      ],
-     "email":"",
-     "number":""
+     "email":"biuro@startechnology.pl",
+     "number":"607 401 744 "
   },
   {
      "name":"startstop.pl",
@@ -984,8 +968,8 @@
         "Mobile",
         "Tester"
      ],
-     "email":"",
-     "number":""
+     "email":"info@startstop.pl",
+     "number":"813 070 770"
   },
   {
      "name":"TEAM International Poland",
@@ -993,9 +977,11 @@
      "tags":[
         "Mobile",
         "Tester",
-        "Web"
+        "Web",
+        ".NET",
+        "JS"
      ],
-     "email":"",
+     "email":"Forumularz Kontaktowy",
      "number":""
   },
   {
@@ -1004,8 +990,8 @@
      "tags":[
         "Tester"
      ],
-     "email":"",
-     "number":""
+     "email":"info@telecomworld.pl",
+     "number":"814 458 000"
   },
   {
      "name":"Tesseract Dev",
@@ -1015,7 +1001,7 @@
         "Architect",
         "Tester"
      ],
-     "email":"",
+     "email":"Forumularz Kontaktowy",
      "number":""
   },
   {
@@ -1029,17 +1015,19 @@
         "Scrum",
         "Tester"
      ],
-     "email":"",
-     "number":""
+     "email":" 814 581 170",
+     "number":"biuro@trimetis.com"
   },
   {
      "name":"Trimetis",
      "url":"http://www.trimetis.eu/",
      "tags":[
-        
+        "Frontend",
+        "Java",
+        "React"
      ],
-     "email":"",
-     "number":""
+     "email":"biuro@trimetis.com",
+     "number":" 814 581 170"
   },
   {
      "name":"UDTech",
@@ -1049,18 +1037,18 @@
         "Architect",
         "Admin"
      ],
-     "email":"",
-     "number":""
+     "email":"sales@udtech.co",
+     "number":"+38 (095) 776 27 77"
   },
   {
-     "name":"Verestro SA",
+     "name":"Verestro",
      "url":"https://verestro.com/kariera#oferty",
      "tags":[
         "JS",
         "PHP"
      ],
-     "email":"",
-     "number":""
+     "email":"Forumularz Kontaktowy",
+     "number":"226 334 996"
   },
   {
      "name":"VADO",
@@ -1068,8 +1056,8 @@
      "tags":[
         "JS"
      ],
-     "email":"",
-     "number":""
+     "email":"biuro@vado.pl",
+     "number":"814 404 140"
   },
   {
      "name":"VELVERO",
@@ -1079,7 +1067,7 @@
         "Admin",
         "PHP"
      ],
-     "email":"",
+     "email":"Forumularz Kontaktowy",
      "number":"814635466"
   },
   {
@@ -1090,8 +1078,8 @@
         "Mobile",
         "Web"
      ],
-     "email":"nope",
-     "number":"nope"
+     "email":"Forumularz Kontaktowy",
+     "number":""
   },
   {
      "name":"ZETO",

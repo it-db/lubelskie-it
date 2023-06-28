@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-export const AnimatedText = ({ text, isBig, delay, isMedium }) => {
+export const AnimatedText = ({ text, isBig, delay, isSmall }) => {
   const words = text.split(' ');
 
   const container = {
@@ -25,8 +25,8 @@ export const AnimatedText = ({ text, isBig, delay, isMedium }) => {
       y: 0,
       transition: {
         type: 'spring',
-        damping: 75,
-        stiffness: 500,
+        damping: 150,
+        stiffness: 1000,
       },
     },
   };
@@ -36,6 +36,16 @@ export const AnimatedText = ({ text, isBig, delay, isMedium }) => {
       <motion.div className="flex overflow-hidden" variants={container} initial="hidden" animate="visible">
         {words.map((word, index) => (
           <motion.span variants={child} className={`mr-4     bg-gradient-to-r from-purple-600 to-violet-700 bg-clip-text text-6xl font-extrabold tracking-tight text-transparent`} key={index}>
+            {word}
+          </motion.span>
+        ))}
+      </motion.div>
+    );
+  } else if (isSmall) {
+    return (
+      <motion.div className="flex overflow-hidden" variants={container} initial="hidden" animate="visible">
+        {words.map((word, index) => (
+          <motion.span variants={child} className="mb-2 mr-2 text-sm font-semibold text-neutral-300" key={index}>
             {word}
           </motion.span>
         ))}

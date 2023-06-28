@@ -50,9 +50,9 @@ const TagInput = ({ tags, setTags }) => {
   };
 
   return (
-    <motion.div animate={{scale: 1}} focus onFocus={{scale: 1.2}} whileFocus={{scale: 1.2}} className="tagInput flex w-full  max-w-full items-center overflow-x-scroll rounded-lg bg-neutral-800 pl-2 text-black">
+    <div className="tagInput flex w-full  max-w-full items-center overflow-x-scroll rounded-lg bg-neutral-800 pl-2 text-black">
       {tags.map((tag, index) => (
-        <div key={index} className="ml-1 mr-1  flex h-8 items-center justify-center  rounded-lg bg-neutral-700/80 pl-3 py-1 text-center text-sm font-semibold text-neutral-50">
+        <div key={index} className="ml-1 mr-1  flex h-8 items-center justify-center  rounded-lg bg-neutral-700/80 py-1 pl-3 text-center text-sm font-semibold text-neutral-50">
           {tag}
           <button onClick={() => deleteTag(index)} className=" text-md ml-3 cursor-pointer border-l-2  border-neutral-500/30 bg-transparent pl-3 pr-3 text-xs text-neutral-200 transition hover:text-neutral-50">
             x
@@ -60,7 +60,7 @@ const TagInput = ({ tags, setTags }) => {
         </div>
       ))}
       <input value={input} onKeyDown={onKeyDown} onChange={onChange} type="text" placeholder={placeholder} className="input h-14 w-full bg-neutral-800 text-lg font-semibold text-neutral-300 placeholder:font-semibold placeholder:text-neutral-500  focus:outline-none " />
-    </motion.div>
+    </div>
   );
 };
 
