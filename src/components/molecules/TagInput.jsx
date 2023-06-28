@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+
 
 const TagInput = ({ tags, setTags }) => {
   const [placeholder, setPlaceholder] = useState('Używaj tagów i szukaj wsród ponad 100 firm!');
@@ -48,7 +50,7 @@ const TagInput = ({ tags, setTags }) => {
   };
 
   return (
-    <div className="tagInput flex w-full  max-w-full items-center overflow-x-scroll rounded-lg bg-neutral-800 pl-2 text-black">
+    <motion.div animate={{scale: 1}} focus onFocus={{scale: 1.2}} whileFocus={{scale: 1.2}} className="tagInput flex w-full  max-w-full items-center overflow-x-scroll rounded-lg bg-neutral-800 pl-2 text-black">
       {tags.map((tag, index) => (
         <div key={index} className="ml-1 mr-1  flex h-8 items-center justify-center  rounded-lg bg-neutral-700/80 pl-3 py-1 text-center text-sm font-semibold text-neutral-50">
           {tag}
@@ -58,7 +60,7 @@ const TagInput = ({ tags, setTags }) => {
         </div>
       ))}
       <input value={input} onKeyDown={onKeyDown} onChange={onChange} type="text" placeholder={placeholder} className="input h-14 w-full bg-neutral-800 text-lg font-semibold text-neutral-300 placeholder:font-semibold placeholder:text-neutral-500  focus:outline-none " />
-    </div>
+    </motion.div>
   );
 };
 

@@ -2,22 +2,25 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ReactComponent as LinkLogo } from '../../assets/link.svg';
 
-const list = {
-  visible: {
-    opacity: 1,
-    y: 0,
-    // transition: {
-    // type: 'tween',
-    // duration: 0.5,
-    // }
-  },
-  hidden: {
-    opacity: 0,
-    y: 50,
-  },
-};
 
 export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChange, onClick, id }) => {
+  
+  const list = {
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: (0.05 * id) % 0.7,
+        type: 'tween',
+        duration: 0.3,
+      }
+    },
+    hidden: {
+      opacity: 0,
+      y: 50,
+    },
+  };
+
   useEffect(() => {
     const storedStatus = localStorage.getItem(name);
     if (storedStatus && status !== storedStatus) {
@@ -37,12 +40,18 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
       variants={list}
       initial="hidden"
       animate="visible"
-      whileHover={{ scale: 1.02 }}
-      transition={{
-        delay: (0.05 * id) % 0.7,
-        type: 'tween',
-        duration: 0.3,
+      whileHover={{
+        scale: 1.02,
+        transition: {
+          delay: 0,
+          // type: 'spring'
+        }
       }}
+      // transition={{
+      //   delay: (0.05 * id) % 0.7,
+      //   type: 'tween',
+      //   duration: 0.3,
+      // }}
     >
       <td className="w-1/5">
         <a href={url} target="_blank" className="w-full  py-4 text-lg font-bold text-neutral-50 transition hover:text-violet-600">
