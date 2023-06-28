@@ -3,7 +3,18 @@ import { Home } from './components/pages/Home';
 import { DataContextProvider } from './context/DataContextProvider';
 
 function App() {
-  return <div>test</div>;
+  return (
+    <Routes>
+      <Route
+        path="*"
+        element={
+          <DataContextProvider>
+            <Home />
+          </DataContextProvider>
+        }
+      />
+    </Routes>
+  );
 }
 
 export default App;
