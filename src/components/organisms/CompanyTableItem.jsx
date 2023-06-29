@@ -14,7 +14,6 @@ const list = {
 };
 
 export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChange, onClick, id }) => {
-  
   const list = {
     visible: {
       opacity: 1,
@@ -23,7 +22,7 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
         delay: (0.05 * id) % 0.7,
         type: 'tween',
         duration: 0.3,
-      }
+      },
     },
     hidden: {
       opacity: 0,

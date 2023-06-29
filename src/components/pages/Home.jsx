@@ -108,7 +108,7 @@ export const Home = () => {
             <TagInput tags={tags} setTags={setTags} />
           </div>
 
-          <div className="mt-10 flex justify-between lg:w-full">
+          <div className="mt-10 flex w-full justify-between lg:w-full">
             <div className="form-control">
               <label className="label cursor-pointer">
                 <input type="checkbox" checked={isCheckboxChecked} onChange={handleCheckboxChange} className="checkbox-primary checkbox mr-4" />

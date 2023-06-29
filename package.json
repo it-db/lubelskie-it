@@ -3,10 +3,11 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://it-db.github.io/lubelskie-it",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview --port 8080"
   },
   "dependencies": {
     "framer-motion": "^10.12.17",
