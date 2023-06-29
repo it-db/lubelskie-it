@@ -22,7 +22,7 @@ const TagInput = ({ tags, setTags }) => {
     handlePlaceholderChange();
   }, [tags]);
 
-  const onKeyDown = (e) => {
+  const onKeyPress = (e) => {
     const { key } = e;
     const trimmedInput = input.trim();
 
@@ -32,6 +32,11 @@ const TagInput = ({ tags, setTags }) => {
       setTags((prevState) => [...prevState, trimmedInput.toLowerCase()]);
       setInput('');
     }
+  };
+
+  const onKeyDown = (e) => {
+    const { key } = e;
+    const trimmedInput = input.trim();
 
     if (key === 'Backspace' && !input.length && tags.length) {
       e.preventDefault();
@@ -57,7 +62,7 @@ const TagInput = ({ tags, setTags }) => {
           </button>
         </div>
       ))}
-      <input value={input} onKeyDown={onKeyDown} onChange={onChange} type="text" placeholder={placeholder} className="input h-14 w-full bg-neutral-800 text-lg font-semibold text-neutral-300 placeholder:font-semibold placeholder:text-neutral-500  focus:outline-none " />
+      <input value={input} onKeyDown={onKeyDown} onKeyPress={onKeyPress} onChange={onChange} type="text" placeholder={placeholder} className="input h-14 w-full bg-neutral-800 text-lg font-semibold text-neutral-300 placeholder:font-semibold placeholder:text-neutral-500  focus:outline-none " />
     </div>
   );
 };
