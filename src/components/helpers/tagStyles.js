@@ -41,6 +41,7 @@ export const tagStyles = {
   '.NET': ' bg-indigo-500/60    hover:bg-indigo-500/80',
   Salesforce: ' bg-indigo-500/60    hover:bg-indigo-500/80',
   'Słabe opinie': ' bg-indigo-500/60    hover:bg-indigo-500/80',
+  Security: ' bg-indigo-500/60    hover:bg-indigo-500/80',
   'C++': 'bg-indigo-500/60    hover:bg-indigo-500/80',
 };
 
