@@ -46,8 +46,8 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
       }}
     >
       <td className="w-1/5">
-        <a href={url} target="_blank" className="w-full  py-4 text-lg font-bold text-neutral-50 transition hover:text-violet-600">
-          <div className="flex items-center hover:stroke-violet-600">
+        <a href={url} target="_blank" className="w-full  py-4 text-lg font-bold text-neutral-50 transition hover:text-indigo-300">
+          <div className="flex items-center hover:stroke-indigo-300">
             <div>
               <LinkLogo className="mr-2  inline-block h-4 w-4 " />
             </div>
