@@ -2,15 +2,26 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ReactComponent as LinkLogo } from '../../assets/link.svg';
 
-const list = {
-  visible: {
-    opacity: 1,
-    y: 0,
-  },
-  hidden: {
-    opacity: 0,
-    y: 50,
-  },
+const tagStyles = {
+  Admin: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  Database: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  Frontend: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  Designer: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  Architect: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  Java: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  JS: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  ML: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  Mobile: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  PHP: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  Python: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  Scrum: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  Tester: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  Web: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  Embedded: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  '.NET': ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  Salesforce: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  'Słabe opinie': ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
+  'C++': 'from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
 };
 
 export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChange, onClick, id }) => {
@@ -79,7 +90,7 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
       <td className="my-3 flex w-auto flex-wrap items-center gap-2">
         {tags.map((tag, index) => {
           return (
-            <motion.button whileHover={{ scale: 1 }} whileTap={{ scale: 0.9 }} key={index} onClick={() => onClick(tag.toLowerCase())} className="rounded-lg bg-gradient-to-r from-purple-600 to-violet-700 px-2 py-1 text-center text-sm font-semibold text-neutral-50 hover:from-purple-700 hover:to-violet-800">
+            <motion.button whileHover={{ scale: 1 }} whileTap={{ scale: 0.9 }} key={index} onClick={() => onClick(tag.toLowerCase())} className={`rounded-lg bg-gradient-to-r ${tagStyles[tag]}  px-2 py-1 text-center text-sm font-semibold text-neutral-200`}>
               {tag}
             </motion.button>
           );

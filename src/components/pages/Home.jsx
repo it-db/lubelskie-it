@@ -111,7 +111,7 @@ export const Home = () => {
           <div className="mt-10 flex w-full justify-between lg:w-full">
             <div className="form-control">
               <label className="label cursor-pointer">
-                <input type="checkbox" checked={isCheckboxChecked} onChange={handleCheckboxChange} className="checkbox-primary checkbox mr-4" />
+                <input type="checkbox" checked={isCheckboxChecked} onChange={handleCheckboxChange} className=" checkbox checkbox-sm mr-4" />
                 <span onChange={handleCheckboxChange} className="label-text font-semibold text-neutral-300">
                   Pokaż tylko firmy do których rekrutujesz
                 </span>
@@ -136,9 +136,9 @@ export const Home = () => {
             <table className="table ">
               <thead>
                 <tr className="border-neutral-800/60">
-                  <th className="w-1/5 text-neutral-500">Firma</th>
+                  <th className="w-1/5  text-neutral-500">Firma</th>
                   <th className="w-1/5 text-neutral-500">Kontakt</th>
-                  <th className="text-neutral-500">Tagi</th>
+                  <th className="w-auto text-neutral-500">Tagi</th>
                   <th className="w-1/5 text-neutral-500">Twój Status Rekrutacji</th>
                 </tr>
               </thead>
@@ -159,7 +159,7 @@ export const Home = () => {
       </div>
 
       <div className="fixed bottom-0 mt-10 flex w-full flex-col items-center justify-center border-t-2 border-neutral-800/80  bg-neutral-900 py-2">
-        <div className="mb-2 text-sm font-semibold text-neutral-200">Wesprzyj nas na GitHubie!</div>
+        <div className="mb-2 text-sm font-semibold text-neutral-200">Wesprzyj rozwój projektu na GitHubie!</div>
         <div>
           <GitHubButton href="https://github.com/it-db/lubelskie-it" className="" data-color-scheme="no-preference: dark-dimmed; light: dark-dimmed; dark: dark-dimmed;" data-size="medium" data-show-count="true" aria-label="Star it-db/lubelskie-it on GitHub">
             Star

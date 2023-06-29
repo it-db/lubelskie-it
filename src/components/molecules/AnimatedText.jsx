@@ -35,7 +35,7 @@ export const AnimatedText = ({ text, isBig, delay, isSmall }) => {
     return (
       <motion.div className="flex overflow-hidden" variants={container} initial="hidden" animate="visible">
         {words.map((word, index) => (
-          <motion.span variants={child} className={`mr-4     bg-gradient-to-r from-purple-600 to-violet-700 bg-clip-text text-6xl font-extrabold tracking-tight text-transparent`} key={index}>
+          <motion.span variants={child} className={index + 1 !== words.length ? `mr-4 bg-gradient-to-r from-indigo-400 to-violet-600 bg-clip-text text-6xl font-extrabold tracking-tight text-transparent` : `mr-4  bg-violet-700 bg-clip-text text-6xl font-extrabold tracking-tight text-transparent`} key={index}>
             {word}
           </motion.span>
         ))}
