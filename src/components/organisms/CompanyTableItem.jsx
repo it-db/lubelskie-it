@@ -1,28 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ReactComponent as LinkLogo } from '../../assets/link.svg';
-
-const tagStyles = {
-  Admin: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  Database: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  Frontend: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  Designer: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  Architect: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  Java: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  JS: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  ML: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  Mobile: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  PHP: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  Python: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  Scrum: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  Tester: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  Web: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  Embedded: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  '.NET': ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  Salesforce: ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  'Słabe opinie': ' from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-  'C++': 'from-indigo-500 to-violet-600  hover:from-indigo-500 hover:to-violet-800',
-};
+import { tagStyles } from '../helpers/tagStyles';
 
 export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChange, onClick, id }) => {
   const list = {
@@ -65,11 +44,6 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
         type: 'tween',
         duration: 0.3,
       }}
-      // transition={{
-      //   delay: (0.05 * id) % 0.7,
-      //   type: 'tween',
-      //   duration: 0.3,
-      // }}
     >
       <td className="w-1/5">
         <a href={url} target="_blank" className="w-full  py-4 text-lg font-bold text-neutral-50 transition hover:text-violet-600">
@@ -90,7 +64,7 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
       <td className="my-3 flex w-auto flex-wrap items-center gap-2">
         {tags.map((tag, index) => {
           return (
-            <motion.button whileHover={{ scale: 1 }} whileTap={{ scale: 0.9 }} key={index} onClick={() => onClick(tag.toLowerCase())} className={`rounded-lg bg-gradient-to-r ${tagStyles[tag]}  px-2 py-1 text-center text-sm font-semibold text-neutral-200`}>
+            <motion.button whileHover={{ scale: 1 }} whileTap={{ scale: 0.9 }} key={index} onClick={() => onClick(tag.toLowerCase())} className={`rounded-lg bg-gradient-to-r ${tagStyles[tag]}  px-2 py-1 text-center text-sm font-semibold text-neutral-200 transition`}>
               {tag}
             </motion.button>
           );

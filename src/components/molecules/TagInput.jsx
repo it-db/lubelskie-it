@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-
 
 const TagInput = ({ tags, setTags }) => {
   const [placeholder, setPlaceholder] = useState('Używaj tagów i szukaj wsród ponad 100 firm!');
