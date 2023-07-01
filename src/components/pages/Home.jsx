@@ -159,12 +159,13 @@ export const Home = () => {
       </div>
 
       <div className="fixed bottom-0 mt-10 flex w-full flex-col items-center justify-center border-t-2 border-neutral-800/80  bg-neutral-900 py-2">
-        <div className="mb-2 text-sm font-semibold text-neutral-200">Wesprzyj rozwój projektu na GitHubie!</div>
-        <div>
-          <GitHubButton href="https://github.com/it-db/lubelskie-it" className="" data-color-scheme="no-preference: dark-dimmed; light: dark-dimmed; dark: dark-dimmed;" data-size="medium" data-show-count="true" aria-label="Star it-db/lubelskie-it on GitHub">
+        <div className="flex gap-3">
+          <div className="mb-2 text-sm font-semibold text-neutral-200">Wesprzyj rozwój projektu na GitHubie:</div>
+          <GitHubButton href="https://github.com/it-db/lubelskie-it" data-color-scheme="no-preference: dark-dimmed; light: dark-dimmed; dark: dark-dimmed;" data-size="small" data-show-count="true" aria-label="Star it-db/lubelskie-it on GitHub">
             Star
           </GitHubButton>
         </div>
+        <div className="mb-2 text-xs font-extralight text-neutral-500">W żaden sposób nie przechowujemy Twoich danych. Wyczyszczenie ciasteczek trwale wyczyści Twoje statusy rekrutacji</div>
       </div>
     </div>
   );
