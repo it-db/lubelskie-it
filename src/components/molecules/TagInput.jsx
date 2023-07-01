@@ -7,7 +7,16 @@ const TagInput = ({ tags, setTags }) => {
   const onChange = (e) => {
     handlePlaceholderChange();
     const { value } = e.target;
+    var lastChar = value.substr(value.length - 1);
     setInput(value);
+    const trimmedInput = input.trim();
+    if ((lastChar === ' ' || lastChar === 'Enter') && trimmedInput.length && !tags.includes(trimmedInput)) {
+      e.preventDefault();
+
+      setTags((prevState) => [...prevState, trimmedInput.toLowerCase()]);
+      setInput('');
+    }
+    
   };
 
   const handlePlaceholderChange = () => {
@@ -22,17 +31,17 @@ const TagInput = ({ tags, setTags }) => {
     handlePlaceholderChange();
   }, [tags]);
 
-  const onKeyPress = (e) => {
-    const { key } = e;
-    const trimmedInput = input.trim();
+  // const onKeyPress = (e) => {
+  //   const { key } = e;
+  //   const trimmedInput = input.trim();
 
-    if ((key === ' ' || key === 'Enter') && trimmedInput.length && !tags.includes(trimmedInput)) {
-      e.preventDefault();
+  //   if ((key === ' ' || key === 'Enter') && trimmedInput.length && !tags.includes(trimmedInput)) {
+  //     e.preventDefault();
 
-      setTags((prevState) => [...prevState, trimmedInput.toLowerCase()]);
-      setInput('');
-    }
-  };
+  //     setTags((prevState) => [...prevState, trimmedInput.toLowerCase()]);
+  //     setInput('');
+  //   }
+  // };
 
   const onKeyDown = (e) => {
     const { key } = e;
@@ -62,7 +71,7 @@ const TagInput = ({ tags, setTags }) => {
           </button>
         </div>
       ))}
-      <input value={input} onKeyDown={onKeyDown} onKeyPress={onKeyPress} onChange={onChange} type="text" placeholder={placeholder} className="input h-14 w-full bg-neutral-800 text-lg font-semibold text-neutral-300 placeholder:font-semibold placeholder:text-neutral-500  focus:outline-none " />
+      <input value={input} onKeyDown={onKeyDown}  onChange={onChange} type="text" placeholder={placeholder} className="input h-14 w-full bg-neutral-800 text-lg font-semibold text-neutral-300 placeholder:font-semibold placeholder:text-neutral-500  focus:outline-none " />
     </div>
   );
 };
