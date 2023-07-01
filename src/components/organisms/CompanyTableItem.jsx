@@ -72,14 +72,14 @@ export const CompanyTableItem = ({ name, email, phone, tags, url, status, onChan
       </td>
 
       <td className="w-1/5">
-        <select onChange={handleStatusChange} value={status} className="text-md trunkate select -ml-4 w-full max-w-xs bg-transparent font-semibold text-neutral-300">
-          <option value="notdefined">Wybierz status</option>
-          <option value="Interesująca">Interesująca</option>
-          <option value="Wysłane CV">Wysłane CV</option>
-          <option value="Zaplanowana rozmowa">Zaplanowana rozmowa</option>
-          <option value="Po rozmowie">Po rozmowie</option>
-          <option value="Oczekiwanie na decyzję">Oczekiwanie na decyzję</option>
-          <option value="Odrzucone">Odrzucone</option>
+        <select onChange={handleStatusChange} value={status} className="text-md trunkate select -ml-4 w-full max-w-xs bg-transparent  font-semibold text-neutral-300">
+          <option className='bg-neutral-800/60' value="notdefined">Wybierz status</option>
+          <option className='bg-neutral-800/60' value="Interesująca">Interesująca</option>
+          <option className='bg-neutral-800/60' value="Wysłane CV">Wysłane CV</option>
+          <option className='bg-neutral-800/60' value="Zaplanowana rozmowa">Zaplanowana rozmowa</option>
+          <option className='bg-neutral-800/60' value="Po rozmowie">Po rozmowie</option>
+          <option className='bg-neutral-800/60' value="Oczekiwanie na decyzję">Oczekiwanie na decyzję</option>
+          <option className='bg-neutral-800/60' value="Odrzucone">Odrzucone</option>
         </select>
       </td>
     </motion.tr>

@@ -62,7 +62,7 @@ const TagInput = ({ tags, setTags }) => {
   };
 
   return (
-    <div className="tagInput flex w-full  max-w-full items-center overflow-x-scroll rounded-lg bg-neutral-800 pl-2 text-black">
+    <div className="tagInput flex w-full  max-w-full items-center rounded-lg bg-neutral-800 pl-2 text-black">
       {tags.map((tag, index) => (
         <div key={index} className="ml-1 mr-1  flex h-8 items-center justify-center  rounded-lg bg-neutral-700/80 py-1 pl-3 text-center text-sm font-semibold text-neutral-50">
           {tag}

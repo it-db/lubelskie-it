@@ -118,17 +118,17 @@ export const Home = () => {
               </label>
             </div>
 
-            <select defaultValue="notdefined" className="text-md  select max-w-xs  bg-neutral-800/60 font-semibold text-neutral-400" onChange={(event) => setSelectedStatusFilter(event.target.value)}>
-              <option disabled value="notdefined">
+            <select defaultValue="notdefined" className="text-md select max-w-xs  bg-neutral-800/60 font-semibold text-neutral-400" onChange={(event) => setSelectedStatusFilter(event.target.value)}>
+              <option className='text-neutral-300' disabled value="notdefined">
                 Status Rekrutacji
               </option>
-              <option value="Wszystkie">Wszystkie</option>
-              <option value="Interesująca">Interesująca</option>
-              <option value="Wysłane CV">Wysłane CV</option>
-              <option value="Zaplanowana rozmowa">Zaplanowana rozmowa</option>
-              <option value="Po rozmowie">Po rozmowie</option>
-              <option value="Oczekiwanie na decyzję">Oczekiwanie na decyzję</option>
-              <option value="Odrzucone">Odrzucone</option>
+              <option className='text-neutral-300' value="Wszystkie">Wszystkie</option>
+              <option className='text-neutral-300' value="Interesująca">Interesująca</option>
+              <option className='text-neutral-300' value="Wysłane CV">Wysłane CV</option>
+              <option className='text-neutral-300' value="Zaplanowana rozmowa">Zaplanowana rozmowa</option>
+              <option className='text-neutral-300' value="Po rozmowie">Po rozmowie</option>
+              <option className='text-neutral-300' value="Oczekiwanie na decyzję">Oczekiwanie na decyzję</option>
+              <option className='text-neutral-300' value="Odrzucone">Odrzucone</option>
             </select>
           </div>
 
