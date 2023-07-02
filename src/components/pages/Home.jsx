@@ -153,7 +153,7 @@ export const Home = () => {
                 </motion.tbody>
               )}
             </table>
-            {isLoading ? <></> : <div className="mb-3 w-auto border-t  border-neutral-800/60 py-4 text-center font-semibold  text-neutral-200">Dane z dnia 28.07.2023</div>}
+            {isLoading ? <></> : <div className="mb-3 w-auto border-t  border-neutral-800/60 py-4 text-center font-semibold  text-neutral-200">Dane z dnia 28.06.2023</div>}
           </div>
         </div>
       </div>
