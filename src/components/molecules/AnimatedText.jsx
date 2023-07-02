@@ -18,11 +18,11 @@ export const AnimatedText = ({ text, isBig, delay, isSmall }) => {
   const child = {
     hidden: {
       opacity: 0,
-      y: 20,
+      transform: "translateY(20px)",
     },
     visible: {
       opacity: 1,
-      y: 0,
+      transform: "translateY(0px)",
       transition: {
         type: 'spring',
         damping: 150,
