@@ -99,9 +99,9 @@ export const Home = () => {
             window.location.reload();
           }}
         >
-          <AnimatedText text={`Lubelskie IT`} isBig delay={0} />
+          <AnimatedText text={`Lubelskie IT`} isBig delay={0.4} />
         </Link>
-        <AnimatedText text={`Baza Danych Lubelskich Firm IT`} delay={0.1} />
+        <AnimatedText text={`Baza Danych Lubelskich Firm IT`} delay={0.6} />
 
         <div className="mt-10 flex flex-col items-center justify-center md:w-4/5 lg:w-4/5 ">
           <div className="flex gap-5 border-b-2 border-neutral-800/30 pb-10 sm:w-4/5 md:w-full lg:w-full">
