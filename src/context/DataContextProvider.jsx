@@ -8,12 +8,17 @@ export const DataContextProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch(dataAddress)
+    setTimeout(()=> {fetchData()}, 0)
+    const fetchData = () => {
+      fetch(dataAddress)
       .then((response) => response.json())
       .then((data) => {
+        
         setData(data);
         setIsLoading(false);
       });
+    }
+    
   }, []);
 
   return <DataContext.Provider value={{ data, isLoading }}>{children}</DataContext.Provider>;

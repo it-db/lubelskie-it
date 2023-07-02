@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { Home } from './components/pages/Home';
-
+import "./App.css"
 import { DataContextProvider } from './context/DataContextProvider';
 
 function App() {
