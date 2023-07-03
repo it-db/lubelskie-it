@@ -7,6 +7,7 @@ import TagInput from '../molecules/TagInput';
 import { motion } from 'framer-motion';
 import { AnimatedText } from '../molecules/AnimatedText';
 import { Link } from 'react-router-dom';
+import GithubButton from '../molecules/GithubButton';
 
 const container = {
   visible: {
@@ -178,6 +179,7 @@ export const Home = () => {
           <GitHubButton href="https://github.com/it-db/lubelskie-it" data-color-scheme="no-preference: dark-dimmed; light: dark-dimmed; dark: dark-dimmed;" data-size="small" data-show-count="true" aria-label="Star it-db/lubelskie-it on GitHub">
             Star
           </GitHubButton>
+          <GithubButton repoUrl={'https://github.com/it-db/lubelskie-it'}></GithubButton>
         </div>
         <div className="mb-2 text-xs font-extralight text-neutral-500">W żaden sposób nie przechowujemy Twoich danych. Wyczyszczenie ciasteczek trwale wyczyści Twoje statusy rekrutacji</div>
       </div>
