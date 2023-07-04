@@ -3,10 +3,11 @@ import { CompanyTableItem } from '../organisms/CompanyTableItem';
 import { useEffect } from 'react';
 import GitHubButton from 'react-github-btn';
 import useData from '../../hooks/useData';
-import TagInput from '../molecules/TagInput';
+import { TagInput } from '../molecules/TagInput';
 import { motion } from 'framer-motion';
 import { AnimatedText } from '../molecules/AnimatedText';
 import { Link } from 'react-router-dom';
+import { TagPopup } from '../molecules/TagPopup';
 
 const container = {
   visible: {
@@ -24,6 +25,7 @@ const container = {
 
 export const Home = () => {
   const [selectedStatusFilter, setSelectedStatusFilter] = useState('');
+  const [inputHasFocus, setInputHasFocus] = useState(false);
 
   const [isCheckboxChecked, setIsCheckboxChecked] = useState(() => {
     const storedCheckboxValue = localStorage.getItem('isCheckboxChecked');
@@ -42,7 +44,6 @@ export const Home = () => {
     if (tags.includes(name)) {
       return;
     }
-
     setTags((prevTags) => [...prevTags, name]);
   };
 
@@ -93,7 +94,7 @@ export const Home = () => {
 
   return (
     <div className="h-auto min-h-screen bg-neutral-900 py-5">
-      <div className="flex w-full flex-col items-center justify-center pb-10">
+      <div className=" flex w-full flex-col items-center justify-center pb-10">
         <Link
           onClick={() => {
             window.location.reload();
@@ -103,10 +104,12 @@ export const Home = () => {
         </Link>
         <AnimatedText text={`Baza Danych Lubelskich Firm IT`} delay={0.6} />
 
-        <div className="mt-10 flex flex-col items-center justify-center md:w-4/5 lg:w-4/5 ">
-          <div className="flex gap-5 border-b-2 border-neutral-800/30 pb-10 sm:w-4/5 md:w-full lg:w-full">
-            <TagInput tags={tags} setTags={setTags} />
+        <div className="relative mt-10 flex flex-col items-center justify-center md:w-4/5 lg:w-4/5 ">
+          <div className="flex gap-5 border-b-2  border-neutral-800/30 pb-10 sm:w-4/5 md:w-full lg:w-full">
+            <TagInput tags={tags} setTags={setTags} setHasFocus={setInputHasFocus} />
           </div>
+
+          <TagPopup inputHasFocus={inputHasFocus} tags={tags} onClick={handleTagClick} />
 
           <div className="mt-10 flex w-full justify-between lg:w-full">
             <div className="form-control">
