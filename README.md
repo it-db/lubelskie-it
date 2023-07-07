@@ -1,5 +1,5 @@
 # LubelskieIT 
-Strona dla osób poszukujących pracy w sektorze IT w Lublinie i okolicach. </br>
+Strona opensource stworzona dla osób poszukujących pracy w sektorze IT w Lublinie i okolicach. </br>
 #### [**Odwiedź stronę**](https://lubelskie-it.me)
 
 ## Plany na przyszłość
