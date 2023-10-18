@@ -10,6 +10,17 @@ W razie zainteresowania stroną, planujemy konsekwentnie dodawać nowe funkcjona
 Pull requesty są mile widziane. 
 Przy większych zmianach, najpierw stwórz Issue, żeby przedyskutować zmianę
 
+## Wsparcie Projektu
+
+<a href="https://star-history.com/#it-db/lubelskie-it&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=it-db/lubelskie-it&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=it-db/lubelskie-it&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=it-db/lubelskie-it&type=Date" />
+  </picture>
+</a>
+
+
 ## Twórcy
 *@JohnnyProg*,
 *@KarolGralewski*
