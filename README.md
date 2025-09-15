@@ -1,6 +1,6 @@
 # LubelskieIT 
 Strona opensource stworzona dla osób poszukujących pracy w sektorze IT w Lublinie i okolicach. </br>
-#### [**Odwiedź stronę**](https://lubelskie-it.me)
+#### [**Odwiedź stronę**](https://it-db.github.io/lubelskie-it/)
 
 ## Plany na przyszłość
 W razie zainteresowania stroną, planujemy konsekwentnie dodawać nowe funkcjonalności oraz aktualizować i poszerzać bazę firm. <br/> <br/>
